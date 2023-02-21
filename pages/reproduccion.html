@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hero">
+    <header>
+        <nav>
+            <ul class="nav">
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../assets/icons/stream.png" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <label for="icon-1">
+                        <img class="icon-nav" src="../assets/icons/home.png" alt="home">
+                            <a id="icon-1" class="hidden" href="../index.html">Inicio</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-2">
+                        <img class="icon-nav" src="../assets/icons/usuario.png" alt="account">
+                            <a id="icon-2" class="hidden" href="./cuenta.html">Cuenta</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-3">
+                        <img class="icon-nav" src="../assets/icons/lista.png" alt="anime-list">
+                        <a id="icon-3" class="hidden" href="./pages/lista-anime.html">Lista de Anime</a>
+                        <a id="movil" href="./pages/lista-anime.html">Lista</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-4">
+                        <img class="icon-nav" src="../assets/icons/marcador.png" alt="my-list">
+                        <a id="icon-4" class="hidden" href="">Mi lista</a>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="header">
+            <div>
+                <form action="/bowser" method="get">
+                    <img id="lens" src="../assets/icons/lupa.png" alt="lens">
+                    <input  class="search" type="text" autocomplete="off" placeholder="Buscar">
+                    <button class="search-button">Buscar</button>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img id="notification" src="../assets/icons/notificacion.png" alt="notification">
+                    </li>
+                    <li class="border-profile">
+                        <a href="./cuenta.html">
+                            <img class="profile" src="../assets/icons/usuario.png" alt="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+        </section>
+        <section class="main">
+            <ul class="guide">
+                <li>
+                    <a href="../index.html"><img src="../assets/icons/home.png" alt="home">Inicio</a>
+                </li>
+                <li>
+                    <a href="./lista-episodios.html"><img src="../assets/icons/arrow-1.png" alt="arrow">Lista de episodios</a>
+                </li>
+                <li>
+                    <a href="./reproduccion.html"><img src="../assets/icons/arrow-1.png" alt="arrow">Jujutsu Kaisen - Episodio 1</a>
+                </li>
+            </ul>
+            <h1 class="name-rep">Jujutsu Kaisen - Episodio 1</h1>
+            <div>
+                <div class="video">
+                    <iframe width="970" height="552" src="https://www.youtube.com/embed/6Tn55tBUdOE" title="JUJUTSU KAISEN | Episodio 1 COMPLETO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-bottom">
+                    <div>
+                        <ul class="select-episode">
+                            <li>
+                                <a href="./reproduccion.html">Anterior</a>
+                            </li>
+                            <li>
+                                <a href="./lista-episodios.html">
+                                    <img src="../assets/icons/lista.png" alt="lista-episodios">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./reproduccion.html">Siguiente</a>            
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="share">
+                        <img src="../assets/icons/share.png" alt="share">
+                        <strong>Compartir</strong>
+                        <div>
+                            <a href="#">
+                                <img src="../assets/icons/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icons/instagram.png" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="../assets/icons/twitter.png" alt="twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator">
+            </div>
+            <div>
+                <h2 class="title">Comentarios</h2>
+                <div class="comment">
+                    <img src="../assets/icons/usuario.png" alt="profile-picture">
+                    <div role="textbox" aria-multiline="true" contenteditable="" aria-label="Comenta lo que quieras..."  style="overflow: auto; overflow-wrap: break-word; max-height: 150px;"></div>
+                </div>
+                <div class="separator-2"></div>
+                <div class="filter">
+                    <p>Mejor</p>
+                    <p>Más reciente</p>
+                    <p>Más antiguo</p>
+                </div>
+                <div class="posted-comments">
+                    <img class="profile-comment" src="../assets/icons/usuario.png" alt="profile-picture">
+                    <div>
+                        <a href="./cuenta.html">Nombre Usuario</a>
+                        <div class="time-post">
+                            <img src="../assets/icons/reloj-de-pared.png" alt="watch">
+                            <p>Hace un día</p>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores exercitationem molestias fugiat animi ab, architecto itaque? Perferendis quisquam et esse nemo cum aut perspiciatis? Molestias quos quaerat deleniti culpa.</p>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li class="text-foot">
+                    <a href="#">Terminos y Condiciones</a>
+                </li>
+                <li class="text-foot">
+                    <a href="#">Políticas de Privacidad</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="text-foot">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="text-foot">
+                    <a href="./cuenta.html">Cuenta</a>
+                </li>
+                <li class="text-foot">
+                    <a href="#">Soporte</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Contactanos</p>
+            <ul class="contacts">
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/twitter.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a href="../index.html">
+                <img id="logo" src="../assets/icons/stream.png" alt="logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
