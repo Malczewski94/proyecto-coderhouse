@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- css bts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body class="hero">
     <header>
@@ -32,12 +34,15 @@
                 <li>
                     <label for="icon-3">
                         <img class="icon-nav" src="../assets/icons/lista.png" alt="anime-list">
-                            <a id="icon-3" class="hidden" href="./lista-anime.html">Lista de Anime</a>
+                        <a id="icon-3" class="hidden" href="./pages/lista-anime.html">Lista de Anime</a>
+                        <a id="movil" href="./pages/lista-anime.html">Lista</a>
                     </label>
                 </li>
                 <li>
-                    <img class="icon-nav" src="../assets/icons/marcador.png" alt="my-list">
+                    <label for="icon-4">
+                        <img class="icon-nav" src="../assets/icons/library.png" alt="my-list">
                         <a id="icon-4" class="hidden" href="">Mi lista</a>
+                    </label>
                 </li>
             </ul>
         </nav>
@@ -56,7 +61,7 @@
                     <li>
                         <img id="notification" src="../assets/icons/notificacion.png" alt="notification">
                     </li>
-                    <li>
+                    <li class="border-profile">
                         <a href="./cuenta.html">
                             <img class="profile" src="../assets/icons/usuario.png" alt="profile">
                         </a>
@@ -64,82 +69,82 @@
                 </ul>
             </div>        
         </section>
-        <section>
+        <section class="container">
             <div>
-                <h1>lista de Animes</h1>
-                <ul>
-                    <li>
+                <h1>Lista de animes</h1>
+                <ul class="row">
+                    <li class="col-1 d-flex aling-content-center">
                         <p>Genero</p>
-                        <img src="" alt="arrow">
+                        <img src="../assets/icons/arrow-down.png" alt="arrow">
                     </li>
-                    <li>
+                    <li class="col-1 d-flex">
                         <p>Tipos</p>
-                        <img src="" alt="arrow">
+                        <img src="../assets/icons/arrow-down.png" alt="arrow">
                     </li>
-                    <li>
+                    <li class="col-1 d-flex">
                         <p>Estado</p>
-                        <img src="" alt="arrow">
-                    </li>
-                    <li>
+                        <img src="../assets/icons/arrow-down.png" alt="arrow">
+                    </li >
+                    <li class="col-1 d-flex">
                         <p>Orden</p>
-                        <img src="" alt="arrow">
+                        <img src="../assets/icons/arrow-down.png" alt="arrow">
                     </li>
-                    <li>
+                    <li class="col-8 d-flex justify-content-end">
                         <p>Filtrar</p>
-                        <img src="" alt="filter">
+                        <img src="../assets/icons/filter.png" alt="filter">
                     </li>
                 </ul>
             </div>
-            <hr>
+            <div class="separator"></div>
             <div>
-                <ul>
-                    <li>
+                <ul class="row">
+                    <li class="col-2" style="height: 10rem;">
                         <img src="../assets/boku-no-her-list.jpg" alt="boku-no-hero">
-                        <a href="./reproduccion.html">Boku No Hero Academy</a>
+                        <a href="./lista-episodios.html">Boku No Hero Academy</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/dr-stone.jpg" alt="drstone">
-                        <a href="./reproduccion.html">Dr. Stone</a>
+                        <a href="./lista-episodios.html">Dr. Stone</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/fullmetal_alchemist-list.jpg" alt="full-metal-alchemist">
-                        <a href="./reproduccion.html">Full Metal Alchemist:Brotherhood</a>
+                        <a href="./lista-episodios.html">Full Metal Alchemist:Brotherhood</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/hunterxhunter-list.jpg" alt="hunterxhunter">
-                        <a href="./reproduccion.html">Hunter x Hunter</a>
+                        <a href="./lista-episodios.html">Hunter x Hunter</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/jujutsu-kaisen-list.jpg" alt="jujutsu-kaisen">
-                        <a href="./reproduccion.html">Jujutsu Kaisen</a>
+                        <a href="./lista-episodios.html">Jujutsu Kaisen</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/kimetsu-no-yaiba-list.jpg" alt="kimetsu">
-                        <a href="./reproduccion.html">Demon Slayer: Kimetsu no Yaiba</a>
+                        <a href="./lista-episodios.html">Demon Slayer: Kimetsu no Yaiba</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/mushoku-tensei-list.jpg" alt="mushoku-tensei">
-                        <a href="./reproduccion.html">Mushoku Tensei: Isekai Ittara Honki Dasu</a>
+                        <a href="./lista-episodios.html">Mushoku Tensei: Isekai Ittara Honki Dasu</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/overlord-list.jpg" alt="overlord">
                         <a href="./reproduccion.html">Overlord</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/spyxfamily-list.jpg" alt="spyxfamily">
-                        <a href="./reproduccion.html">Spy x Family</a>
+                        <a href="./lista-episodios.html">Spy x Family</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/mob-psycho-list.jpg" alt="mob-psyhco">
-                        <a href="./reproduccion.html">Mob Psycho 100</a>
+                        <a href="./lista-episodios.html">Mob Psycho 100</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/one-punch-list.jpg" alt="one-punch">
-                        <a href="./reproduccion.html">One Punch Man</a>
+                        <a href="./lista-episodios.html">One Punch Man</a>
                     </li>
-                    <li>
+                    <li class="col-2">
                         <img src="../assets/tensei-shitara-list.jpg" alt="tensei-shitara">
-                        <a href="./reproduccion.html">Tensei shitara Slime Datta Ken</a>
+                        <a href="./lista-episodios.html">Tensei shitara Slime Datta Ken</a>
                     </li>
                 </ul>
             </div>
@@ -193,5 +198,8 @@
             <img src="../assets/icons/stream.png" alt="logo">
         </div>
     </footer>
+    <!-- js bts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>

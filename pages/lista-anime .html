@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css bts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="hero">
+    <header>
+        <nav>
+            <ul class="nav">
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../assets/icons/stream.png" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <label for="icon-1">
+                        <img class="icon-nav" src="../assets/icons/home.png" alt="home">
+                            <a id="icon-1" class="hidden" href="../index.html">Inicio</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-2">
+                        <img class="icon-nav" src="../assets/icons/usuario.png" alt="account">
+                            <a id="icon-2" class="hidden" href="./cuenta.html">Cuenta</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-3">
+                        <img class="icon-nav" src="../assets/icons/lista.png" alt="anime-list">
+                        <a id="icon-3" class="hidden" href="./pages/lista-anime.html">Lista de Anime</a>
+                        <a id="movil" href="./pages/lista-anime.html">Lista</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="icon-4">
+                        <img class="icon-nav" src="../assets/icons/library.png" alt="my-list">
+                        <a id="icon-4" class="hidden" href="">Mi lista</a>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="header">
+            <div>
+                <form action="/bowser" method="get">
+                    <img id="lens" src="../assets/icons/lupa.png" alt="lens">
+                    <input  class="search" type="text" autocomplete="off" placeholder="Buscar">
+                    <button class="search-button">Buscar</button>
+                </form>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img id="notification" src="../assets/icons/notificacion.png" alt="notification">
+                    </li>
+                    <li class="border-profile">
+                        <a href="./cuenta.html">
+                            <img class="profile" src="../assets/icons/usuario.png" alt="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+        </section>
+        <section class="container">
+            <div>
+                <h1>Lista de animes</h1>
+                <ul class="row">
+                    <li class="col-1 d-flex aling-content-center">
+                        <p>Genero</p>
+                        <img class="icon" src="../assets/icons/arrow-down.png" alt="arrow">
+                    </li>
+                    <li class="col-1 d-flex">
+                        <p>Tipos</p>
+                        <img class="icon" src="../assets/icons/arrow-down.png" alt="arrow">
+                    </li>
+                    <li class="col-1 d-flex">
+                        <p>Estado</p>
+                        <img class="icon" src="../assets/icons/arrow-down.png" alt="arrow">
+                    </li >
+                    <li class="col-1 d-flex">
+                        <p>Orden</p>
+                        <img class="icon" src="../assets/icons/arrow-down.png" alt="arrow">
+                    </li>
+                    <li class="col-8 d-flex justify-content-end">
+                        <p>Filtrar</p>
+                        <img class="icon" src="../assets/icons/filter.png" alt="filter">
+                    </li>
+                </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/hunterxhunter-list.jpg" class="card-img-top" alt="hunterxhunter">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Hunter x Hunter</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/fullmetal_alchemist-list.jpg" class="card-img-top" alt="full-metal-alchemist">
+                    <div class="card-body">
+                        <a href="./lista-episodios.htm class=" class="card-title">Full Metal Alchemist:Brotherhood</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/dr-stone-list.jpg" class="card-img-top" alt="drstone">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Dr. Stone</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/boku-no-her-list.jpg" class="card-img-top" alt="boku-no-hero">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Boku No Hero Academy</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/overlord-list.jpg" class="card-img-top" alt="overlord">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Overlord</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/mushoku-tensei-list.jpg" class="card-img-top" alt="mushoku-tensei">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Mushoku Tensei</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/kimetsu-no-yaiba-list.jpg" class="card-img-top" alt="kimetsu">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Demon Slayer: Kimetsu no Yaiba</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                    <img src="../assets/jujutsu-kaisen-list.jpg" class="card-img-top" alt="jujutsu-kaisen">
+                    <div class="card-body">
+                        <a href="./lista-episodios.html" class="card-title">Jujutsu Kaisen</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+                <li class="text-foot">
+                    <a href="#">Terminos y Condiciones</a>
+                </li>
+                <li class="text-foot">
+                    <a href="#">Políticas de Privacidad</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="text-foot">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="text-foot">
+                    <a href="./cuenta.html">Cuenta</a>
+                </li>
+                <li class="text-foot">
+                    <a href="#">Soporte</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Contactanos</p>
+            <ul class="contacts">
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/icons/twitter.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="../assets/icons/stream.png" alt="logo">
+        </div>
+    </footer>
+    <!-- js bts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
