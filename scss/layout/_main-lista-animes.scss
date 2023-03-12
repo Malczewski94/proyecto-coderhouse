@@ -1,0 +1,95 @@
+.multiselect{
+    h1{
+        margin: 1em 0 1em 0.5em;
+    }
+    ul{
+        @include flex(left, center, nowrap, row, 2em);
+        margin-bottom: 1em;
+        li{
+            display: flex;
+            img{
+                width: 14px;
+                height: 14px;
+                margin-top: 3px;
+            }
+        }
+        div{
+            display: flex;
+            img{
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+.list-anime{
+    ul{
+        @include flex(space-around, center, wrap, row, 2em);
+        margin: 2em 0 2em 0;
+        li{
+            @include flex(center, left, nowrap, column,0.5em);
+            -webkit-perspective: 800;
+            perspective: 800;
+            div{
+                width: 12rem;
+                height: 18rem;
+                position: relative;
+                transform-style: preserve-3d;
+                img, div{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                    left: 0;
+                    top: 0;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+                img{
+                    object-fit: cover;
+                    border: solid 4px white;
+                }
+                div{
+                    animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                    background-color: white;
+                    overflow-x: hidden;
+                    strong{
+                        color: black;
+                        margin: 2px;
+                    }
+                    p{
+                        color: black;
+                        font-size: 15px;
+                        margin: 2px;
+                    }
+                }
+                div::-webkit-scrollbar{
+                    width: 5px;
+                }
+                div::-webkit-scrollbar-thumb{
+                    background: #00c6c7;
+                    border-radius: 5px;
+                }
+            }
+            div:hover{
+                animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            }
+            a{
+            max-width: 12rem;
+            height: 2em;
+                text-align: center;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+@keyframes flip-vertical-right {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}

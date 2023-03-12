@@ -7,64 +7,86 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="hero">
     <header>
-        <div>
-            <nav>
-                <ul>
-                    <li>        
-                        <a href="../index.html">
-                            <img src="./assets/icons/figma.png" alt="logo">
-                        </a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/home.png" alt="home">
-                            <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/usuario.png" alt="account">
-                            <a href="./cuenta.html">Cuenta</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/lista.png" alt="anime-list">
-                            <a href="./lista-anime.html">Lista de Anime</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/marcador.png" alt="my-list">
-                            <a href="./cuenta.html">Mi lista</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="nav">
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../assets/icons/stream.png" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <div>
+                            <img src="../assets/icons/home-2.png" alt="home">
+                        </div>
+                        <div>
+                            <p>Inicio</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cuenta.html">
+                        <div>
+                            <img src="../assets/icons/account-2.png" alt="account">
+                        </div>
+                        <div>
+                            <p>Cuenta</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./lista-anime.html">
+                        <div>
+                            <img src="../assets/icons/list-2.png" alt="anime-list">
+                        </div>
+                        <div>
+                            <p>Lista de Anime</p>
+                            <p id="mobile">Lista</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../assets/icons/library-2.png" alt="my-list">
+                        </div>
+                        <div>
+                            <p>Mi libreria</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="banner">
+        <section class="header">
             <div>
                 <form action="/bowser" method="get">
-                    <img src="./assets/icons/lupa.png" alt="lens">
-                    <input type="text" autocomplete="off" placeholder="Buscar">
-                    <button>Buscar</button>
+                    <input  class="search" type="text" autocomplete="off" placeholder="Buscar">
+                    <button class="search-button">Buscar</button>
                 </form>
             </div>
-        </div>
-    </header>
-    <main>
-        <section>
             <div>
                 <ul>
                     <li>
-                        <a href="../index.html">Inicio</a>
+                        <img src="../assets/icons/notificacion.png" alt="notification">
                     </li>
-                    <li>
-                        <img src="./assets/icons/notificacion.png" alt="notification">
-                    </li>
-                    <li class="perfil">
+                    <li class="border-profile">
                         <a href="./cuenta.html">
-                            <img src="./assets/icons/usuario.png" alt="profile">
+                            <img src="../assets/icons/account.png" alt="profile">
                         </a>
                     </li>
                 </ul>
             </div>        
         </section>
-        <section>
-            <div>
-                <div>
-                    <h1>Jujutsu Kaisen</h1>
+        <section class="main-episodes">
+            <div class="description">
+                <div class="description-top">
+                    <div>
+                        <h1>Jujutsu Kaisen</h1>
+                    </div>
                     <div>
                         <ul>
                             <li>
@@ -82,26 +104,26 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="follow">
                     <ul>
                         <li>
-                            <img src="" alt="save">
+                            <img src="../assets/icons/marcador.png" alt="save">
                             <p>Guardar</p>
                         </li>
                         <li>
-                            <img src="" alt="favorite">
+                            <img src="../assets/icons/favorite.png" alt="favorite">
                             <p>Favoritos</p>
                         </li>
                         <li>
-                            <img src="" alt="follow">
+                            <img src="../assets/icons/follow.png" alt="follow">
                             <p>Seguir</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <hr>
-            <div>
-                <h2>Sinopsis</h2>
+            <div class="separator"></div>
+            <div class="synopsis">
+                <h3>Sinopsis</h3>
                 <p>
                     Yuuji Itadori es un estudiante de instituto con unas habilidades físicas excepcionales. 
                     Todos los días, como rutina, va al hospital a visitar a su abuelo enfermo y decide apuntarse 
@@ -111,53 +133,92 @@
                     para salvar a sus compañeros. ¿Qué le deparará el destino?
                 </p>
             </div>
-            <hr>
-            <div>
-                <div>
+            <div class="separator"></div>
+            <div class="list-episodes">
+                <div class="title-season">
                     <h2>Lista de episodios</h2>
                     <div>
                         <p>Temporada 1</p>
-                        <img src="" alt="arrow">
+                        <img src="../assets/icons/arrow-down.png" alt="arrow">
                     </div>
                 </div>
-                <div>
+                <div class="episodes">
                     <ul>
                         <li>
                             <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-24">
-                                <span>Episodio 24</span>
+                                <div class="episodes-desc">
+                                    <div class="episodes-img">
+                                        <img src="../assets/jujutsu-kaisen24.jpg" alt="jujutsu-kaisen-24">
+                                    </div>
+                                    <div>
+                                        <h3>Jujutsiu Kaisen</h3>
+                                        <p>Episodio 24</p>
+                                    </div>
+                                </div>
+                                <img class="eye" src="../assets/icons/eye-closed.png" alt="ojo">
                             </a>
                         </li>
+                        <div class="separator-2"></div>
                         <li>
                             <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-23">
-                                <span>Episodio 23</span>
+                                <div class="episodes-desc">
+                                    <div class="episodes-img">
+                                        <img src="../assets/jujutsu-kaisen23.jpg" alt="jujutsu-kaisen-23">
+                                    </div>
+                                    <div>
+                                        <h3>Jujutsiu Kaisen</h3>
+                                        <p>Episodio 23</p>
+                                    </div>
+                                </div>
+                                <img class="eye" src="../assets/icons/eye-closed.png" alt="ojo">
                             </a>
                         </li>
+                        <div class="separator-2"></div>
                         <li>
                             <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-22">
-                                <span>Episodio 22</span>
+                                <div class="episodes-desc">
+                                    <div class="episodes-img">
+                                        <img src="../assets/jujutsu-kaisen22.jpg" alt="jujutsu-kaisen-22">
+                                    </div>
+                                    <div>
+                                        <h3>Jujutsiu Kaisen</h3>
+                                        <p>Episodio 22</p>
+                                    </div>
+                                </div>
+                                <img class="eye" src="../assets/icons/eye-closed.png" alt="ojo">
                             </a>
                         </li>
+                        <div class="separator-2"></div>
                         <li>
                             <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-21">
-                                <span>Episodio 21</span>
+                                <div class="episodes-desc">
+                                    <div class="episodes-img">
+                                        <img src="../assets/jujutsu-kaisen21.jpg" alt="jujutsu-kaisen-21">
+                                    </div>
+                                    <div>
+                                        <h3>Jujutsiu Kaisen</h3>
+                                        <p>Episodio 21</p>
+                                    </div>
+                                </div>
+                                <img class="eye" src="../assets/icons/eye.png" alt="ojo">
                             </a>
                         </li>
+                        <div class="separator-2"></div>
                         <li>
                             <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-20">
-                                <span>Episodio 20</span>
+                                <div class="episodes-desc">
+                                    <div class="episodes-img">
+                                        <img src="../assets/jujutsu-kaisen20.jpg" alt="jujutsu-kaisen-20">
+                                    </div>
+                                    <div>
+                                        <h3>Jujutsiu Kaisen</h3>
+                                        <p>Episodio 20</p>
+                                    </div>
+                                </div>
+                                <img class="eye" src="../assets/icons/eye.png" alt="ojo">
                             </a>
                         </li>
-                        <li>
-                            <a href="./reproduccion.html">
-                                <img src="" alt="jujutsu-kaisen-19">
-                                <span>Episodio 19</span>
-                            </a>
-                        </li>
+                        <div class="separator-2"></div>
                     </ul>
                 </div>
             </div>
@@ -166,49 +227,51 @@
     <footer>
         <div>
             <ul>
-                <li>
+                <li class="text-foot">
                     <a href="#">Terminos y Condiciones</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="#">Políticas de Privacidad</a>
                 </li>
             </ul>
         </div>
         <div>
             <ul>
-                <li>
+                <li class="text-foot">
                     <a href="../index.html">Inicio</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="./cuenta.html">Cuenta</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="#">Soporte</a>
                 </li>
             </ul>
         </div>
         <div>
             <p>Contactanos</p>
-            <ul>
+            <ul class="contacts">
                 <li>
                     <a href="#">
-                        <img src="" alt="facebook">
+                        <img src="../assets/icons/facebook.png" alt="facebook">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="" alt="instagram">
+                        <img src="../assets/icons/instagram.png" alt="instagram">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="" alt="twitter">
+                        <img src="../assets/icons/twitter.png" alt="twitter">
                     </a>
                 </li>
             </ul>
-        </div>        
+        </div>
         <div>
-            <img src="" alt="logo">
+            <a href="../index.html">
+                <img id="logo" src="../assets/icons/stream.png" alt="logo">
+            </a>
         </div>
     </footer>
 </body>

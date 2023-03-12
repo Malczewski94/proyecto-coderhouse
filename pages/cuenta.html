@@ -7,74 +7,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="reproductor-body">
+<body class="hero">
     <header>
-        <div>
-            <nav>
-                <ul>
-                    <li>        
-                        <a href="../index.html">
-                            <img src="./assets/icons/figma.png" alt="logo">
-                        </a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/home.png" alt="home">
-                            <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/usuario.png" alt="account">
-                            <a href="./cuenta.html">Cuenta</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/lista.png" alt="anime-list">
-                            <a href="./lista-anime.html">Lista de Anime</a>
-                    </li>
-                    <li>
-                        <img src="./assets/icons/marcador.png" alt="my-list">
-                            <a href="./cuenta.html">Mi lista</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="nav">
+                <li id="logo">
+                    <a href="../index.html">
+                        <img src="../assets/icons/stream.png" alt="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <div>
+                            <img src="../assets/icons/home-2.png" alt="home">
+                        </div>
+                        <div>
+                            <p>Inicio</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./cuenta.html">
+                        <div>
+                            <img src="../assets/icons/account.png" alt="account">
+                        </div>
+                        <div>
+                            <p>Cuenta</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./lista-anime.html">
+                        <div>
+                            <img src="../assets/icons/list-2.png" alt="anime-list">
+                        </div>
+                        <div>
+                            <p>Lista de Anime</p>
+                            <p id="mobile">Lista</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="../assets/icons/library-2.png" alt="my-list">
+                        </div>
+                        <div>
+                            <p>Mi libreria</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="header">
             <div>
                 <form action="/bowser" method="get">
-                    <img src="./assets/icons/lupa.png" alt="lens">
                     <input type="text" autocomplete="off" placeholder="Buscar">
                     <button>Buscar</button>
                 </form>
             </div>
-        </div>
-    </header>
-    <main>
-        <section>
             <div>
                 <ul>
                     <li>
-                        <a href="../index.html">Inicio</a>
+                        <img src="../assets/icons/notificacion.png" alt="notification">
                     </li>
-                    <li>
-                        <img src="./assets/icons/notificacion.png" alt="notification">
-                    </li>
-                    <li class="perfil">
+                    <li class="border-profile">
                         <a href="./cuenta.html">
-                            <img src="./assets/icons/usuario.png" alt="profile">
+                            <img src="../assets/icons/account.png" alt="profile">
                         </a>
                     </li>
                 </ul>
             </div>        
         </section>
-        <section>
-            <div>
+        <section class="config">
+            <div class="title-config">
                 <h1>Configuración</h1>
                 <ul role="tablist">
                     <li>Perfil</li>
                     <li>Mi lista</li>
                 </ul>
             </div>
-            <hr>
-            <div>
+            <div class="separator"></div>
+            <div class="subtitle-config">
                 <h2>Foto de perfil</h2>
-                <div>
+                <div class="contain-config">
                     <div>
-                        <img src="" alt="profile-picture">
+                        <img class="account" src="../assets/icons/account.png" alt="profile-picture">
                     </div>
                     <form action="#">
                         <input type="submit" value="Agregar foto de perfil">
@@ -82,11 +102,11 @@
                     </form>
                 </div>
             </div>
-            <div>
+            <div class="subtitle-config">
                 <h2>Banner del perfil</h2>
-                <div>
+                <div class="contain-config">
                     <div>
-                        <img src="" alt="banner">
+                        <img class="banner" src="../assets/jujutsu-kaisen2.jpg" alt="banner">
                     </div>
                     <form action="#">
                         <input type="submit" value="Actualizar">
@@ -94,16 +114,20 @@
                     </form>
                 </div>
             </div>
-            <div>
+            <div class="subtitle-config">
                 <h2>Configuración del perfil</h2>
                 <p>Cambiar los datos de identificación de tu cuenta</p>
-                <div>
-                    <form action="#">
-                        <p>Usuario</p>
-                        <input type="text" name="user">
+                <div class="contain-config">
+                    <form class="data" action="#">
+                        <div>
+                            <p>Usuario</p>
+                            <input class="text-box-1" type="text" name="user">
+                        </div>
                         <p>Puedes actualizar tu nombre de usuario.</p>
-                        <p>Nombre público</p>
-                        <input type="text" name="public-name">
+                        <div>
+                            <p>Nombre público</p>
+                            <input class="text-box-2" type="text" name="public-name">
+                        </div>
                         <p>Personaliza el uso de mayúsculas en tu nombre de usuario.</p>
                         <div>
                             <input type="submit" value="Guardar cambios">
@@ -116,49 +140,51 @@
     <footer>
         <div>
             <ul>
-                <li>
+                <li class="text-foot">
                     <a href="#">Terminos y Condiciones</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="#">Políticas de Privacidad</a>
                 </li>
             </ul>
         </div>
         <div>
             <ul>
-                <li>
+                <li class="text-foot">
                     <a href="../index.html">Inicio</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="./cuenta.html">Cuenta</a>
                 </li>
-                <li>
+                <li class="text-foot">
                     <a href="#">Soporte</a>
                 </li>
             </ul>
         </div>
         <div>
             <p>Contactanos</p>
-            <ul>
+            <ul class="contacts">
                 <li>
                     <a href="#">
-                        <img src="" alt="facebook">
+                        <img src="../assets/icons/facebook.png" alt="facebook">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="" alt="instagram">
+                        <img src="../assets/icons/instagram.png" alt="instagram">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="" alt="twitter">
+                        <img src="../assets/icons/twitter.png" alt="twitter">
                     </a>
                 </li>
             </ul>
         </div>
         <div>
-            <img src="" alt="logo">
+            <a href="../index.html">
+                <img id="logo" src="../assets/icons/stream.png" alt="logo">
+            </a>
         </div>
     </footer>
 </body>

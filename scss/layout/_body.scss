@@ -1,0 +1,33 @@
+.hero{
+    @include grid(7em 1fr, 1fr 6em)
+}
+
+main{
+    background: $background-main;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    padding: 0 8% 0 8%;
+}
+
+.separator{
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%,#00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
+    padding: 1px;
+}
+
+.separator-2{
+    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%,#00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
+    padding: 0.3px;
+    width: 50%;
+}
+
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: #191919;
+}
+body::-webkit-scrollbar-thumb{
+    background: #00c6c7;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #00ffff;
+}

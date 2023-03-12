@@ -1,0 +1,46 @@
+header{
+    background-color: $background-main;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-right: solid 3px rgba(0, 255, 255, 50%);
+}
+
+.nav{
+    @include flex(center, center, nowrap, column, 2em);
+    margin-top: 2em;
+    li{
+        a{
+            div{
+                padding: 0.3rem 0.4rem 0 0.4rem;
+                img{
+                    width: 2rem;
+                    height: 100%;
+                }
+                p{
+                    display: none;
+                    width: 12rem;
+                    text-align: start;
+                    padding-left: 5em;
+                }
+            }
+        }
+    }
+    li:hover{
+        transform: scale(1.1);
+        border-radius: 50%;
+        background: #e5097f;
+    }
+    li:hover a div p{
+        display: block;
+        position: absolute;
+        bottom: 14px;
+    }
+}
+
+#logo{
+    background: none;
+}
+
+#mobile{
+    display: none;
+}

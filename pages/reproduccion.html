@@ -17,29 +17,45 @@
                     </a>
                 </li>
                 <li>
-                    <label for="icon-1">
-                        <img class="icon-nav" src="../assets/icons/home.png" alt="home">
-                            <a id="icon-1" class="hidden" href="../index.html">Inicio</a>
-                    </label>
+                    <a href="../index.html">
+                        <div>
+                            <img src="../assets/icons/home-2.png" alt="home">
+                        </div>
+                        <div>
+                            <p>Inicio</p>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <label for="icon-2">
-                        <img class="icon-nav" src="../assets/icons/usuario.png" alt="account">
-                            <a id="icon-2" class="hidden" href="./cuenta.html">Cuenta</a>
-                    </label>
+                    <a href="./cuenta.html">
+                        <div>
+                            <img src="../assets/icons/account-2.png" alt="account">
+                        </div>
+                        <div>
+                            <p>Cuenta</p>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <label for="icon-3">
-                        <img class="icon-nav" src="../assets/icons/lista.png" alt="anime-list">
-                        <a id="icon-3" class="hidden" href="./pages/lista-anime.html">Lista de Anime</a>
-                        <a id="movil" href="./pages/lista-anime.html">Lista</a>
-                    </label>
+                    <a href="./lista-anime.html">
+                        <div>
+                            <img src="../assets/icons/list-2.png" alt="anime-list">
+                        </div>
+                        <div>
+                            <p>Lista de Anime</p>
+                            <p id="mobile">Lista</p>
+                        </div>
+                    </a>
                 </li>
                 <li>
-                    <label for="icon-4">
-                        <img class="icon-nav" src="../assets/icons/library.png" alt="my-list">
-                        <a id="icon-4" class="hidden" href="">Mi lista</a>
-                    </label>
+                    <a href="#">
+                        <div>
+                            <img src="../assets/icons/library-2.png" alt="my-list">
+                        </div>
+                        <div>
+                            <p>Mi libreria</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -48,7 +64,6 @@
         <section class="header">
             <div>
                 <form action="/bowser" method="get">
-                    <img id="lens" src="../assets/icons/lupa.png" alt="lens">
                     <input  class="search" type="text" autocomplete="off" placeholder="Buscar">
                     <button class="search-button">Buscar</button>
                 </form>
@@ -56,30 +71,36 @@
             <div>
                 <ul>
                     <li>
-                        <img id="notification" src="../assets/icons/notificacion.png" alt="notification">
+                        <img src="../assets/icons/notificacion.png" alt="notification">
                     </li>
                     <li class="border-profile">
                         <a href="./cuenta.html">
-                            <img class="profile" src="../assets/icons/usuario.png" alt="profile">
+                            <img src="../assets/icons/account.png" alt="profile">
                         </a>
                     </li>
                 </ul>
             </div>        
         </section>
-        <section class="main">
-            <ul class="guide">
+        <section class="main-reproduction">
+            <ul class="nav-guide">
                 <li>
-                    <a href="../index.html"><img src="../assets/icons/home.png" alt="home">Inicio</a>
+                    <a href="../index.html">
+                        <img src="../assets/icons/home.png" alt="home">Inicio
+                    </a>
                 </li>
                 <li>
-                    <a href="./lista-episodios.html"><img src="../assets/icons/arrow-1.png" alt="arrow">Lista de episodios</a>
+                    <a href="./lista-episodios.html">
+                        <img src="../assets/icons/arrow-1.png" alt="arrow">Lista de episodios
+                    </a>
                 </li>
                 <li>
-                    <a href="./reproduccion.html"><img src="../assets/icons/arrow-1.png" alt="arrow">Jujutsu Kaisen - Episodio 1</a>
+                    <a href="./reproduccion.html">
+                        <img src="../assets/icons/arrow-1.png" alt="arrow">Jujutsu Kaisen - Episodio 1
+                    </a>
                 </li>
             </ul>
-            <h1 class="name-rep">Jujutsu Kaisen - Episodio 1</h1>
-            <div>
+            <h1>Jujutsu Kaisen - Episodio 1</h1>
+            <div class="video-settings">
                 <div class="video">
                     <iframe width="970" height="552" src="https://www.youtube.com/embed/6Tn55tBUdOE" title="JUJUTSU KAISEN | Episodio 1 COMPLETO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
@@ -91,7 +112,7 @@
                             </li>
                             <li>
                                 <a href="./lista-episodios.html">
-                                    <img src="../assets/icons/lista.png" alt="lista-episodios">
+                                    <img src="../assets/icons/list.png" alt="lista-episodios">
                                 </a>
                             </li>
                             <li>
@@ -118,11 +139,15 @@
             </div>
             <div class="separator">
             </div>
-            <div>
-                <h2 class="title">Comentarios</h2>
-                <div class="comment">
-                    <img src="../assets/icons/usuario.png" alt="profile-picture">
-                    <div role="textbox" aria-multiline="true" contenteditable="" aria-label="Comenta lo que quieras..."  style="overflow: auto; overflow-wrap: break-word; max-height: 150px;"></div>
+            <div class="comments">
+                <h2>Comentarios</h2>
+                <div class="my-comment">
+                    <div>
+                        <img src="../assets/icons/account.png" alt="profile-picture">
+                    </div>
+                    <div class="textbox">
+                        <div role="textbox" aria-multiline="true" contenteditable="" style="overflow: auto; overflow-wrap: break-word;"></div>
+                    </div>
                 </div>
                 <div class="separator-2"></div>
                 <div class="filter">
@@ -131,7 +156,9 @@
                     <p>Más antiguo</p>
                 </div>
                 <div class="posted-comments">
-                    <img class="profile-comment" src="../assets/icons/usuario.png" alt="profile-picture">
+                    <div>
+                        <img src="../assets/icons/account.png" alt="profile-picture">
+                    </div>
                     <div>
                         <a href="./cuenta.html">Nombre Usuario</a>
                         <div class="time-post">
@@ -141,8 +168,6 @@
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores exercitationem molestias fugiat animi ab, architecto itaque? Perferendis quisquam et esse nemo cum aut perspiciatis? Molestias quos quaerat deleniti culpa.</p>
                         </div>
-                    </div>
-                    <div>
                     </div>
                 </div>
             </div>

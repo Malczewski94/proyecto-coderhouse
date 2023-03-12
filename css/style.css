@@ -1,716 +1,634 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/* Colores
-    191919 negro
-    00FFFF neon claro
-    00C6C7 neon oscuro
-    E5097F magenta
-    6B0023 magenta oscuro
-*/
+li {
+  list-style: none; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+a {
+  text-decoration: none; }
 
-li{
-    list-style: none;
-}
+h1 {
+  color: #ffffff; }
 
-a{
-    text-decoration: none;
-}
+h2 {
+  color: #ffffff;
+  font-size: 28px; }
 
-p{
-    color: white;
-}
+h3 {
+  color: #ffffff; }
 
-h1{
-    color: white;
-}
+strong {
+  color: #ffffff;
+  font-size: 18px; }
 
-.hero{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 7em 1fr;
-    grid-template-rows: 1fr 6em;
-    overflow-x: hidden;
-}
+li {
+  color: #ffffff; }
 
-/* Barra de navegacion */
+a {
+  color: #ffffff; }
 
-header{
-    background-color: #191919;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border-right: solid 3px rgba(0, 255, 255, 50%);
-    padding-top: 2em;
-    padding-left: 1.8em;
-}
+p {
+  color: #ffffff;
+  font-size: 16px; }
 
-#logo{
-    border: hidden;
-    background: none;
-}
+.hero {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  grid-template-rows: 1fr 6em; }
 
-#logo a img{
-    width: 4.3rem;
-    height: 4.3rem;
-}
+main {
+  background: #191919;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  padding: 0 8% 0 8%; }
 
-#movil{
-    display: none;
-}
+.separator {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%, #00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
+  padding: 1px; }
 
-.nav{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    position: fixed;
-}
+.separator-2 {
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%, #00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
+  padding: 0.3px;
+  width: 50%; }
 
-.icon-nav{
-    width: 2rem;
-    height: 2rem;
-}
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #191919; }
 
-.nav li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.1rem;
-    height: 3.1rem;
-}
+body::-webkit-scrollbar-thumb {
+  background: #00c6c7; }
 
-.nav li:hover{
-    transform: scale(1.15);
+body::-webkit-scrollbar-thumb:hover {
+  background: #00ffff; }
+
+header {
+  background-color: #191919;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-right: solid 3px cyan; }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em; }
+  .nav li a div {
+    padding: 0.3rem 0.4rem 0 0.4rem; }
+    .nav li a div img {
+      width: 2rem;
+      height: 100%; }
+    .nav li a div p {
+      display: none;
+      width: 12rem;
+      text-align: start;
+      padding-left: 5em; }
+  .nav li:hover {
+    transform: scale(1.1);
     border-radius: 50%;
-    background: linear-gradient(45grad, #E5097F 0%, #6B0023 25%, #00c6c7 80%, #00FFFF 90%);
-}
-
-.nav li label:hover{
-    padding: 0.31rem 0.43rem 0.31rem 0.37rem;
-    border-radius: 50%;
-    background-color: #191919;
-}
-
-.hidden{
-    height: 3em;
-    width: 14em;
-    display: none;
-    color: white;
-    padding-left: 5em;
-}
-
-li:hover label .icon-nav ~ .hidden, .hidden:hover{
-    display: flex;
-    align-items: center;
+    background: #e5097f; }
+  .nav li:hover a div p {
+    display: block;
     position: absolute;
-    bottom: -0.3em;
-}
+    bottom: 14px; }
 
-nav li label{
-    position: relative;
-}
+#logo {
+  background: none; }
 
-/* Footer */
+#mobile {
+  display: none; }
 
-footer{
-    background-color: #00C6C7;
-    grid-column: 1/3;
-    grid-row: 2/2;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 0;
+  margin-top: 1.5em; }
+  .header div form {
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
-    color: white;
-}
-
-footer div p{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.text-foot{
-    margin: 8px;
-}
-
-.text-foot a{
-    color: white;
-}
-
-.contacts{
-    display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-}
-
-.contacts li a{
-    margin: 0 1em 0 1em;
-}
-
-/* Main nav */
-
-.header{
-    margin: 1.5em 3em 0 0em;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    align-items: center;
-    gap: 3em;
-}
-
-.header div ul{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    align-items: center;
-    gap: 5em;
-}
-
-.search{
-    width: 18.75rem;
-    height: 1.87rem;
-    border: hidden;
-    background: #00C6C7;
-    mix-blend-mode: luminosity;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2rem;
-}
-
-.search::placeholder{
-    padding-left: 1.8rem;
-}
-
-.search-button{
-    margin-left: 15.5em;
-    border: 0;
-    position: absolute;
-    width: 85px;
-    height: 22px;
-    background: #00FFFF;
-    mix-blend-mode: normal;
-    border-radius: 2rem;
-    color: #5e5e5e;
-}
-
-#lens{
-    z-index: 1;
-    margin-left: 0.3em;
-    position: absolute;
-    width: 22px;
-    height: 22px;
-}
-
-#notification{
-    width: 1.55rem;
-    height: 1.55rem;
-}
-
-.profile{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: #191919;
-}
-
-.border-profile{
-    padding: 3px 3px 0 4px;
-    border-radius: 50%;
-    background: linear-gradient(45grad, #E5097F 0%, #6B0023 25%, #00c6c7 80%, #00FFFF 90%);;
-}
-
-.header div form{
-    display: flex;
-    align-items: center;
-}
-
-/* Main index */
-
-strong{
-    font-size: 18px;
-}
-
-main{
-    background-color: #191919;
-    grid-column: 2/3;
-    grid-row: 1/1;
-    padding: 0 7em 0 7em;
-}
-
-.trend{
-    margin: 3em;
-    position: relative;
-}
-
-.trend-back{
+    gap: 0; }
+    .header div form img {
+      z-index: 1;
+      position: absolute; }
+    .header div form input {
+      padding-left: 0.5rem;
+      width: 38vh;
+      height: 1.87rem;
+      border: hidden;
+      background: #00C6C7;
+      mix-blend-mode: luminosity;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 2rem; }
+    .header div form input::placeholder {
+      padding-left: 0.5rem; }
+    .header div form button {
+      margin-right: 0.25rem;
+      width: 5.5rem;
+      height: 1.4rem;
+      border: none;
+      position: absolute;
+      background: #00ffff;
+      mix-blend-mode: normal;
+      border-radius: 2rem;
+      color: #5e5e5e; }
+  .header div ul {
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 5em; }
+    .header div ul li img {
+      width: 30px;
+      height: 30px; }
+    .header div ul li a img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: #191919; }
+    .header div ul .border-profile {
+      padding: 3px 3px 0 3px;
+      border-radius: 50%;
+      background: linear-gradient(45grad, #E5097F 0%, #6B0023 25%, #00c6c7 80%, #00FFFF 90%); }
 
-.background{
-    top: -2em;
-    position: absolute;
-    width: 78.125rem;
-    height: 37.5rem;
-    justify-content: center;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%);
-
-}
-
-.trend-back img{
-    top: -3em;
-    position: absolute;
-    background-blend-mode: luminosity;
-    mix-blend-mode: luminosity;
-    opacity: 0.6;
-    border-radius: 30px;
-    margin: 6em;
-    max-width: 68.75rem;
-    max-height: 25rem;
-}
-
-.trend-front{
+footer {
+  background-color: #00c6c7;
+  grid-column: 1/3;
+  grid-row: 2/2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 0; }
+  footer div p {
+    text-align: center;
+    margin-bottom: 10px; }
+  footer .contacts {
     display: flex;
-    z-index: 1;
     justify-content: center;
     align-items: center;
-}
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1em; }
 
-.trend-front:hover img{
+.trend {
+  margin: 3em;
+  position: relative; }
+  .trend .trend-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0; }
+    .trend .trend-front div {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 1em;
+      z-index: 1;
+      max-width: 35rem; }
+      .trend .trend-front div img {
+        max-width: 20rem; }
+      .trend .trend-front div .season {
+        font-size: 26px; }
+      .trend .trend-front div .name {
+        font-size: 40px; }
+      .trend .trend-front div p {
+        font-size: 17px; }
+  .trend .trend-front:hover div img {
     transform: scale(1.03);
-    filter: drop-shadow(0.5rem 2.5rem 2rem #191919);
-}
-
-.trend-front img{
-    z-index: 1;
-    max-width: 21.875rem;
-    max-height: 37.5rem;
-}
-
-.trend-front div{
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    text-align: left;
-    max-width: 28.125rem;
-    gap: 1em;
-}
-
-.trend-front div p{
-    font-size: 16px;
-}
-
-.name{
-    font-size: 45px;
-    color: white;
-}
-
-.season{
-    font-size: 24px;
-    color: white;
-}
-
-.trend-front div p{
-    color: white;
-}
-
-.title{
-    color: white;
-    font-size: 26px;
-    margin: 1rem 0 2rem 1rem;
-}
-
-.emission{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    gap: 2em;
-}
-
-.description{
-    display: flex;
-    flex-direction: column;
-}
-
-.front-page{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    color: white;
-}
-
-.front-page:hover{
-    transform: scale(1.02);
-    background: radial-gradient(70% 35% at 50% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%);
-}
-
-.front-index{
-    max-height: 11.25rem;
-}
-
-.front-page span:nth-of-type(1){
-    width: 16.88rem;
-    overflow: hidden;
-    border-radius: 1.2rem 1.2rem 0 0;
-}
-
-/* REPRODUCCION MAIN */
-
-.guide{
-    display: flex;
-    margin-top: 2.5em;
-}
-
-.guide li a{
-    color: white;
-    margin-right: 0.2em;
-    padding-top: 10em;
-    font-size: 14px;
-}
-
-.guide li a img{
-    width: 0.5rem;
-    height: 0.5rem;
-    margin-right: 0.2em;
-}
-
-.name-rep{
-    font-size: 32px;
-    color: white;
-    margin: 0.5em 0.5em 0.5em 0;
-}
-
-.video{
+    filter: drop-shadow(0.5rem 2.5rem 2rem #191919); }
+  .trend .trend-back {
     display: flex;
     justify-content: center;
-    width: 100%;
-    background: radial-gradient(50% 51% at 50% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%);
-    padding: 2em;
-}
-
-.video-bottom{
-    display: flex;
-    margin: 0 3em 0 3em;
-    justify-content: space-between;
-}
-
-.select-episode{
-    display: flex;
     align-items: center;
-}
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0; }
+    .trend .trend-back img {
+      top: 2em;
+      position: absolute;
+      background-blend-mode: luminosity;
+      mix-blend-mode: luminosity;
+      border-radius: 30px;
+      opacity: 0.6;
+      width: 60vw; }
 
-.select-episode li a{
-    font-size: 18px;
-    font-weight: bold;
-}
+.background-radial {
+  top: -3em;
+  position: absolute;
+  width: 80vw;
+  height: 37.5rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%); }
 
-.select-episode li:nth-child(1) a{
-    padding: 6px 10px 10px 12px;
-    background: linear-gradient(90deg, #E5097F, #6B0023);
-    border-radius: 1rem 0 0 1rem;
-    color: white;
-}
+.list-anime-index h2 {
+  margin: 1em; }
 
-.select-episode li:nth-child(2) a{
-    padding: 13px 4px 3px 4px;
-    background: #6B0023;
-}
+.list-anime-index div ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2em; }
+  .list-anime-index div ul li {
+    margin-bottom: 1em; }
+    .list-anime-index div ul li a span img {
+      width: 12rem;
+      height: 18rem;
+      border-radius: 1.2rem 1.2rem 0 0;
+      object-fit: cover; }
+    .list-anime-index div ul li a span img:hover {
+      transform: scale(1.02); }
 
-.select-episode li a img{
-    margin-top: 0.375rem;
-    width: 24px;
-    height: 24px;
-}
+.config .title-config h1 {
+  margin: 0.5em 0 0.5em 0; }
 
-.select-episode li:nth-child(3) a{
-    padding: 6px 12px 10px 10px;
-    background: linear-gradient(90deg, #6B0023, #E5097F);
-    border-radius: 0 1rem 1rem 0;
-    color: white;
-}
+.config .title-config ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em; }
 
-.share{
+.config .title-config ul li:hover {
+  color: #00ffff; }
+
+.config .subtitle-config h2 {
+  margin-top: 0.5em; }
+
+.config .subtitle-config .contain-config {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 2em;
+  width: 55vw;
+  margin: 1em 0 1em 0;
+  padding: 0.75em 0 0.75em 0;
+  border: solid 1px #e5097f;
+  border-radius: 1rem;
+  background: #393939; }
+  .config .subtitle-config .contain-config .account {
+    border-radius: 50%;
+    border: solid 2px white;
+    margin-left: 1em; }
+  .config .subtitle-config .contain-config .banner {
+    max-width: 11rem;
+    margin-left: 1em;
+    border-radius: 4px;
+    border: solid 1px white; }
+  .config .subtitle-config .contain-config form {
     display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.5em; }
+    .config .subtitle-config .contain-config form input {
+      width: 10rem;
+      height: 1.8rem;
+      background: #e5097f;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      box-shadow: 2px 2px 5px #191919; }
+  .config .subtitle-config .contain-config .data {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 0.5em;
-    color: white;
-}
+    width: 100%; }
+    .config .subtitle-config .contain-config .data div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 5em; }
+      .config .subtitle-config .contain-config .data div .text-box-1, .config .subtitle-config .contain-config .data div .text-box-2 {
+        width: 42rem;
+        background: #696969;
+        box-shadow: inset 2px 2px 5px #191919; }
+      .config .subtitle-config .contain-config .data div .text-box-2 {
+        margin-left: -4em; }
 
-.share div a{
-    margin-left: 1.5em;
-}
+.multiselect h1 {
+  margin: 1em 0 1em 0.5em; }
 
-.separator{
-    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%,#00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
-    padding: 1px;
-    margin: 2em 0 2em 0;
-}
+.multiselect ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 2em;
+  margin-bottom: 1em; }
+  .multiselect ul li {
+    display: flex; }
+    .multiselect ul li img {
+      width: 14px;
+      height: 14px;
+      margin-top: 3px; }
+  .multiselect ul div {
+    display: flex; }
+    .multiselect ul div img {
+      width: 18px;
+      height: 18px; }
 
-.comment{
-    display: grid;
-    grid-template-columns: 9em 55em;
-    grid-template-rows: 7em;
-}
-
-.comment img{
-    border: solid 3px #E5097F;
-    border-radius: 50%;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.comment div{
-    border-radius: 0.5rem;
-    box-shadow: inset 1px 3px 10px #191919;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    color: white;
-    background: #00FFFF;
-}
-
-.separator-2{
-    width: 60rem;
-    background: linear-gradient(0.25turn, rgba(0, 0, 0, 0) 0%,#00c6c7 25%, #ffffff 50%, #00c6c7 75%, rgba(0, 0, 0, 0) 100%);
-    padding: 0.3px;
-    margin: 2em 0 2em 6.3em;
-}
-
-.filter{
+.list-anime ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2em;
+  margin: 2em 0 2em 0; }
+  .list-anime ul li {
     display: flex;
-    justify-content: end;
-    gap: 0.8rem;
-    color: white;
-}
-
-.filter p:hover{
-    color: #00FFFF;
-}
-
-.posted-comments{
-    display: grid;
-    grid-template-columns: 9em 1fr;
-    grid-template-rows: 2em 2em 5em;
-}
-
-.profile-comment{
-    border: solid 3px #E5097F;
-    border-radius: 50%;
-}
-
-.posted-comments div a{
-    font-size: 26px;
-    color: white;
-    font-weight:bolder;
-}
-
-.posted-comments div p{
-    max-width: 55em;
-    color: white;
-}
-
-.time-post{
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.time-post img{
-    max-width: 1rem;
-    max-height: 1rem;
-    margin: 0.3rem 0.8rem 0.3rem 0.4rem;
-}
-
-@media (max-width:426px) {
-    /* INDEX */
-
-    .hero{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 6em 5em;
-    }
-    main{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        padding: 0px;
-    }
-    footer{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    header{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        padding: 0;
-        border: none;
-        z-index: 5;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.5em;
+    -webkit-perspective: 800;
+    perspective: 800; }
+    .list-anime ul li div {
+      width: 12rem;
+      height: 18rem;
+      position: relative;
+      transform-style: preserve-3d; }
+      .list-anime ul li div img, .list-anime ul li div div {
+        position: absolute;
         width: 100%;
-        position: fixed;
-        bottom: 0%;
-    }
-    .nav{
-        height: 5em;
-        flex-direction: row;
-        align-items: end;
-        justify-content: space-evenly;
-        background-color: #191919;
-        position: relative;
-    }
-    .icon-nav{
-        width: 2rem;
-        height: 2rem;
-    }
-    .nav li label{
-        max-width: 4em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .hidden{
-        padding: 0;
-        max-width: 9em;
-        display: block;
-        text-align: center;
-        margin-top: 0.2em;
-    }
-    #icon-3{
-        display: none;
-    }
-    #movil{
-        display: block;        
-        color: white;
-        margin-bottom: 30px;
-        margin-top: 0.1em;
-    }
-    .header{
-        margin-left: 2em;
-        justify-content: center;
-    }
-    .header div ul{
-        gap: 3em;
-    }
-    .trend{
-        margin: 0;
-        width: 35em;
-    }
-    .trend-front{
-        justify-content: center;
-        padding-top: 1em;
-    }
-    .trend-front img{
-        z-index: 3;
-        max-width: 12rem;
-    }
-    .trend-front div{
-        gap: 0.4rem;
-        max-width: 19em;
-        z-index: 4;
-        margin-right: 3em;
-    }
-    .trend-front div p{
-        font-size: 13px;
-        font-weight: 400;
-    }
-    .season{
-        font-size: 18px;
-    }
-    .name{
-        font-size: 22px;
-    }
-    .trend-back img{
-        z-index: 2;
-        max-width: 32rem;
-    }
-    .background{
-        z-index: 1;
-        max-width: 35em;
-        max-height: 20em;
+        height: 100%;
+        border-radius: 8px;
+        left: 0;
         top: 0;
-    }
-    #logo{
-        display: none;
-    }
-    .emission{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        justify-items: left;
-        margin-left: 2em;
-    }
-    .front-page{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; }
+      .list-anime ul li div img {
+        object-fit: cover;
+        border: solid 4px white; }
+      .list-anime ul li div div {
+        animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+        background-color: white;
+        overflow-x: hidden; }
+        .list-anime ul li div div strong {
+          color: black;
+          margin: 2px; }
+        .list-anime ul li div div p {
+          color: black;
+          font-size: 15px;
+          margin: 2px; }
+      .list-anime ul li div div::-webkit-scrollbar {
+        width: 5px; }
+      .list-anime ul li div div::-webkit-scrollbar-thumb {
+        background: #00c6c7;
+        border-radius: 5px; }
+    .list-anime ul li div:hover {
+      animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+    .list-anime ul li a {
+      max-width: 12rem;
+      height: 2em;
+      text-align: center;
+      font-weight: bolder; }
+
+@keyframes flip-vertical-right {
+  0% {
+    transform: rotateY(0); }
+  100% {
+    transform: rotateY(180deg); } }
+
+.main-reproduction {
+  width: 100%; }
+  .main-reproduction .nav-guide {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0.5em;
+    margin: 2em 0 1.5em 2em; }
+    .main-reproduction .nav-guide li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 0.5em;
+      height: 1rem; }
+      .main-reproduction .nav-guide li a img {
+        height: 100%;
+        object-fit: contain; }
+  .main-reproduction h1 {
+    margin-bottom: 1.5em;
+    font-size: 34px; }
+  .main-reproduction .video-settings {
+    text-align: center;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%); }
+    .main-reproduction .video-settings .video {
+      text-align: center; }
+    .main-reproduction .video-settings .video-bottom, .main-reproduction .video-settings .video-bottom div, .main-reproduction .video-settings .video-bottom div ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 1em;
+      margin: 0.5em 0 0.5em 0; }
+      .main-reproduction .video-settings .video-bottom div ul {
+        border-radius: 25px;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        background-image: linear-gradient(to left, #e5097f, #ce026a, #b70056, #a00045, #890035, #890035, #890035, #890035, #a00045, #b70056, #ce026a, #e5097f); }
+        .main-reproduction .video-settings .video-bottom div ul li a {
+          font-weight: 650; }
+          .main-reproduction .video-settings .video-bottom div ul li a img {
+            height: 24px; }
+  .main-reproduction .comments {
+    width: inherit; }
+    .main-reproduction .comments h2 {
+      margin: 1em; }
+    .main-reproduction .comments .my-comment {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 5em; }
+      .main-reproduction .comments .my-comment div img {
+        border-radius: 50%;
+        border: solid 3px #e5097f; }
+      .main-reproduction .comments .my-comment .textbox {
+        height: 7rem;
+        width: 45vw; }
+        .main-reproduction .comments .my-comment .textbox div {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px;
+          padding: 6px;
+          box-shadow: inset 1px 3px 10px #191919;
+          background: #00ffff; }
+        .main-reproduction .comments .my-comment .textbox div::placeholder {
+          color: #191919; }
+    .main-reproduction .comments .separator-2 {
+      margin: 1.5em auto; }
+    .main-reproduction .comments .filter {
+      display: flex;
+      justify-content: end;
+      gap: 1em; }
+      .main-reproduction .comments .filter p:hover {
+        color: #00ffff; }
+    .main-reproduction .comments .posted-comments {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      gap: 5em; }
+      .main-reproduction .comments .posted-comments div {
+        margin-bottom: 1em; }
+        .main-reproduction .comments .posted-comments div img {
+          border-radius: 50%;
+          border: solid 3px #e5097f; }
+        .main-reproduction .comments .posted-comments div div p {
+          max-width: 45vw; }
+        .main-reproduction .comments .posted-comments div .time-post {
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+          margin-bottom: 0.5em; }
+          .main-reproduction .comments .posted-comments div .time-post img {
+            width: 10px;
+            height: 10px;
+            border: none; }
+          .main-reproduction .comments .posted-comments div .time-post p {
+            font-size: 12px; }
+        .main-reproduction .comments .posted-comments div a {
+          font-size: 22px;
+          font-weight: 600; }
+
+#banner {
+  background: linear-gradient(to top, #191919 0%, #191919 70%, #19191900 100%), no-repeat url(../../assets/jujutsu-kaisen.jpg);
+  background-size: contain; }
+
+.main-episodes .description {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 0;
+  height: 35vh; }
+  .main-episodes .description .description-top {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em; }
+    .main-episodes .description .description-top div h1 {
+      font-size: 52px; }
+    .main-episodes .description .description-top div ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2em; }
+      .main-episodes .description .description-top div ul li {
+        padding: 4px 6px 4px 6px;
+        border: solid 2px #191919;
+        border-radius: 6px;
+        background: #494949;
+        mix-blend-mode: luminosity; }
+        .main-episodes .description .description-top div ul li p {
+          font-weight: 550; }
+  .main-episodes .description .follow ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 1.5em; }
+    .main-episodes .description .follow ul li {
+      text-align: center;
+      margin-bottom: 1em; }
+      .main-episodes .description .follow ul li img {
+        height: 24px; }
+
+.main-episodes .synopsis {
+  margin: 1em 0 1em 0; }
+  .main-episodes .synopsis h3 {
+    margin-bottom: 0.5em;
+    font-size: 28px; }
+
+.main-episodes .list-episodes .title-season {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0 2em 0; }
+  .main-episodes .list-episodes .title-season div {
+    display: flex;
+    background: #e5097f;
+    border: solid 1px white;
+    border-radius: 8px;
+    padding: 4px 6px 5px 6px; }
+    .main-episodes .list-episodes .title-season div img {
+      height: 18px; }
+
+.main-episodes .list-episodes .episodes {
+  margin-bottom: 2em; }
+  .main-episodes .list-episodes .episodes ul {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2em; }
+    .main-episodes .list-episodes .episodes ul li {
+      max-width: 100%;
+      max-height: 100%; }
+      .main-episodes .list-episodes .episodes ul li a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
         flex-direction: row;
-    }
-    .description{
-        max-width: 14rem;
-        font-size: 18px;
-        gap: 0.2em;
-    }
-    .front-index{
-        width: 90%;
-        height: 9rem;
-    }
-    .front-page span:nth-of-type(1){
-        border-radius: 1.2rem 0 0 1.2rem;
-    }
-    strong{
-        font-size: 22px;
-    }
-    .front-page:hover{
-        background: radial-gradient(30% 65% at 40% 50%, rgba(0, 255, 255, 0.48) 0%, rgba(0, 255, 255, 0.48) 0.01%, rgba(0, 255, 255, 0) 100%);
-    }
-    /* REPRODUCCION */
-
-    .main{
-        margin: 0 2em 0 2em;
-        width: 30rem;
-    }
-    .guide li a{
-        font-size: 16px;
-    }    
-    .guide li a img{
-        width: 0.8rem;
-        height: 0.8rem;
-    }
-    .video iframe{
-        height: 14.5rem;
-    }
-    .video-bottom{
-        margin: 0;
-    }
-    .share strong{
-        font-size: 18px;
-    }
-    .share div a{
-        margin-left: 0.5em;
-    }
-    .separator{
-        margin: 1.5em 0 0 0;
-    }
-    .title{
-        font-size: 24px;
-    }
-    .comment{
-        grid-template-columns: 7em 1fr;
-    }
-    .comment div{
-        max-width: 25em;
-    }   
-    .separator-2{
-        max-width: 30rem;
-        margin: 1rem 0 1rem 0;
-    }
-    .posted-comments{
-        grid-template-columns: 7em 1fr;
-        margin-bottom: 0.5em;
-    }
-}
-
-/* LISTA DE ANIME BOOSTRAP */
-
-.card-img-top{
-    width: 100%;
-    height: 20rem;
-}
-.icon{
-    width: 20px;
-    height: 20px;
-}
+        gap: 0; }
+        .main-episodes .list-episodes .episodes ul li a .episodes-desc {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 3em; }
+          .main-episodes .list-episodes .episodes ul li a .episodes-desc .episodes-img {
+            width: 18rem;
+            height: 10rem; }
+            .main-episodes .list-episodes .episodes ul li a .episodes-desc .episodes-img img {
+              border-radius: 4px; }
+          .main-episodes .list-episodes .episodes ul li a .episodes-desc div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em; }
+        .main-episodes .list-episodes .episodes ul li a .eye {
+          height: 40px; }
+    .main-episodes .list-episodes .episodes ul .separator-2 {
+      margin: auto; }
