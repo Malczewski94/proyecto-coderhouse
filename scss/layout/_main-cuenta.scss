@@ -35,34 +35,34 @@
                 border-radius: 4px;
                 border: solid 1px white;
             }
-                form{
-                    @include flex(center, left, nowrap, column, 0.5em);
-                    input{
-                        width: 10rem;
-                        height: 1.8rem;
-                        background: #e5097f;
-                        border: none;
-                        border-radius: 4px;
-                        color: white;
-                        box-shadow: 2px 2px 5px #191919;
+            form{
+                @include flex(center, left, nowrap, column, 0.5em);
+                input{
+                    width: 10rem;
+                    height: 1.8rem;
+                    background: #e5097f;
+                    border: none;
+                    border-radius: 4px;
+                    color: white;
+                    box-shadow: 2px 2px 5px #191919;
+                }
+            }
+            .data{
+                @include flex(center, center, nowrap, column, 0.5em);
+                width: 100%;
+                div{
+                    @include flex(center, center, nowrap, row, 5em);
+                    .text-box-1{
+                        width: 40vw;
+                        background: #696969;
+                        box-shadow: inset 2px 2px 5px #191919;
+                    }
+                    .text-box-2{
+                        @extend .text-box-1;
+                        margin-left: -4em;
                     }
                 }
-                .data{
-                    @include flex(center, center, nowrap, column, 0.5em);
-                    width: 100%;
-                    div{
-                        @include flex(center, center, nowrap, row, 5em);
-                        .text-box-1{
-                            width: 42rem;
-                            background: #696969;
-                            box-shadow: inset 2px 2px 5px #191919;
-                        }
-                        .text-box-2{
-                            @extend .text-box-1;
-                            margin-left: -4em;
-                        }
-                    }
-                }
+            }
         }
     }
 }

@@ -44,3 +44,25 @@ header{
 #mobile{
     display: none;
 }
+
+@media (max-width:700px) {
+    header{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border: none;
+        z-index: 5;
+        width: 100%;
+        bottom: 0%;
+        position: fixed;
+    }
+    .nav{
+        margin: 1em 0 1em 0;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #logo{
+        display: none;
+    }
+}

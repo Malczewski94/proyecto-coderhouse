@@ -5,7 +5,7 @@
 
 .main-episodes{
     .description{
-        @include flex(space-between, end, nowrap, row, 0);
+        @include flex(space-between, end, wrap, row, 0);
         height: 35vh;
         .description-top{
             @include flex(center, start, nowrap, column, 1em);

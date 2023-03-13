@@ -3,7 +3,7 @@
         margin: 1em 0 1em 0.5em;
     }
     ul{
-        @include flex(left, center, nowrap, row, 2em);
+        @include flex(left, center, wrap, row, 2em);
         margin-bottom: 1em;
         li{
             display: flex;
@@ -54,6 +54,7 @@
                     animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
                     background-color: white;
                     overflow-x: hidden;
+                    text-align: center;
                     strong{
                         color: black;
                         margin: 2px;

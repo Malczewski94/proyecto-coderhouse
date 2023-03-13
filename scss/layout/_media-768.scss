@@ -1,0 +1,73 @@
+// INDEX //
+@media (max-width:768px) {
+    .trend{
+        a{
+            .trend-front{
+                width: 35rem;
+            }
+        }
+        .trend-back{
+            img{
+                top: -0.4em;
+                width: 38rem;
+            }
+            .background-radial{
+                height: 23rem;
+                width: 88vw;
+            }
+        }
+    }
+}
+
+// CUENTA //
+@media (max-width:768px) {
+    .config{
+        .subtitle-config{
+            .contain-config{
+                .data{
+                    div{
+                        .text-box-1{
+                            width: 35vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// LISTA DE EPISODIOS //
+@media (max-width:830px) {
+    .main-episodes{
+        .description{
+            justify-content: center;
+            .description-top{
+                align-items: center;
+            }
+        }
+    }
+}
+
+// REPRODUCCION //
+@media (max-width:768px) {
+    .main-reproduction{
+        .video-settings{
+            .video{
+                iframe{
+                    width: 75vw;
+                    height: 40vh;
+                }
+            }
+        }
+        .comments{
+            .my-comment{
+                justify-content: space-evenly;
+                gap: 0;
+            }
+            .posted-comments{
+                justify-content: space-evenly;
+                gap: 0;
+            }
+        }
+    }
+}

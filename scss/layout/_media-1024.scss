@@ -1,0 +1,65 @@
+// INDEX //
+@media (max-width:1024px) {
+    .trend{
+        a{
+            .trend-front{
+                div{
+                    max-width: 23rem;
+                    gap: 0.3em;
+                    .season{
+                        font-size: 20px;
+                    }
+                    .name{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .trend-back{
+            img{
+                width: 40rem;
+            }
+            .background-radial{
+                height: 28rem;
+            }
+        }
+    }
+}
+
+// LISTA DE EPISODIOS //
+@media (max-width:1024px) {
+    #banner{
+        background:  linear-gradient(to top, #191919 0%,#191919 80%, #19191900 100%), no-repeat url(../../assets/jujutsu-kaisen.jpg);
+        background-size: contain;
+    }
+}
+
+// REPRODUCCION //
+@media (max-width:1250px) {
+    .main-reproduction{
+        .video-settings{
+            .video{
+                iframe{
+                    width: 720px;
+                    height: 388px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:930px) {
+    .main-reproduction{
+        .video-settings{
+            .video{
+                iframe{
+                    width: 560px;
+                    height: 297px;
+                }
+            }
+        }
+    }
+}
