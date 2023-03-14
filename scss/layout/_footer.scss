@@ -20,3 +20,11 @@ footer{
         grid-row: 2/3;
     }
 }
+
+@media (max-width:425px) {
+    footer{
+        .contacts{
+            gap: 0.5em;
+        }
+    }
+}

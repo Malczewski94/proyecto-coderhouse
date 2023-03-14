@@ -54,7 +54,7 @@
         margin: 1em;
     }
     div{
-        ul{
+        .emission{
             @include flex(space-around, center, wrap, row, 2em);
             li{
                 margin-bottom: 1em;

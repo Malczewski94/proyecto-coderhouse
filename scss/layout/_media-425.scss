@@ -1,11 +1,19 @@
 // INDEX //
-@media (max-width:700px) {
+@media (max-width:600px) {
+    #padding{
+        padding: 0;
+    }
+    #margin{
+        margin: 2em;
+    }
     .trend{
+        overflow: hidden;
         div{
             a{
                 .trend-front{
+                    justify-content: center;
                     margin: 0 0.5em 0 0.5em;
-                    max-width: 22rem;
+                    max-width: 90vw;
                     div{
                         img{
                             display: none;
@@ -20,11 +28,41 @@
         .trend-back{
             width: 100%;
             img{
-                max-height: 15rem;
+                width: 170vw;
             }
             .background-radial{
                 height: 50vh;
                 width: 150vw;
+            }
+        }
+    }
+    .list-anime-index{
+        margin: 2em;
+    }
+}
+
+@media (max-width:426px) {
+    .list-anime-index{
+        margin: 1em;
+        div{
+            .emission{
+                width: 100%;
+                height: 100%;
+                justify-content: left;
+                li{
+                    a{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2em;
+                        span{
+                            img{
+                                width: 50vw;
+                                height: 20vh;
+                                border-radius: 1.2rem 0 0 1.2rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

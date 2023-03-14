@@ -3,17 +3,18 @@
     .trend{
         a{
             .trend-front{
+                justify-content: space-evenly;
                 width: 35rem;
             }
         }
         .trend-back{
             img{
                 top: -0.4em;
-                width: 38rem;
+                width: 80vw;
             }
             .background-radial{
                 height: 23rem;
-                width: 88vw;
+                width: 80vw;
             }
         }
     }
