@@ -594,7 +594,7 @@ footer {
           font-weight: 600; }
 
 #banner {
-  background: linear-gradient(to top, #191919 0%, #191919 70%, #19191900 100%), no-repeat url(../../assets/jujutsu-kaisen.jpg);
+  background-image: linear-gradient(to top, #191919 0%, #191919 70%, #19191900 100%), url(../../assets/jujutsu-kaisen.jpg);
   background-size: contain; }
 
 .main-episodes .description {
