@@ -3,17 +3,18 @@
     .trend{
         a{
             .trend-front{
+                justify-content:start;
                 div{
-                    max-width: 23rem;
+                    max-width: 26rem;
                     gap: 0.3em;
                     .season{
                         font-size: 20px;
                     }
                     .name{
-                        font-size: 30px;
+                        font-size: 40px;
                     }
                     p{
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -32,7 +33,7 @@
 // LISTA DE EPISODIOS //
 @media (max-width:1024px) {
     #banner{
-        background:  linear-gradient(to top, #191919 0%,#191919 80%, #19191900 100%), no-repeat url(../../assets/jujutsu-kaisen.jpg);
+        background:  linear-gradient(to top, #191919 0%,#191919 80%, #19191900 100%), url(../assets/jujutsu-kaisen.jpg);
         background-size: contain;
     }
 }

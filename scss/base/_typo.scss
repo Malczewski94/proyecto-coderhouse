@@ -1,23 +1,42 @@
+@font-face {
+    font-family: "Jujutsu";
+    src: local("Jujutsu"),
+        url("../../assets/typo/Jujutsu\ Kaisen.ttf");
+}
+
+@font-face {
+    font-family: "Kimetsu";
+    src: local("Kimetsu"),
+        url("../../assets/typo/Font/blood-crow.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 h1{
     color: $typo-color;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2{
     color: $typo-color;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
 }
 
 h3{
     color: $typo-color;
+    font-family: 'Roboto', sans-serif;
 }
 
 strong{
     color: $typo-color;
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 li{
     color: $typo-color;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -26,7 +45,8 @@ a{
 
 p{
     color: $typo-color;
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width:426px) {

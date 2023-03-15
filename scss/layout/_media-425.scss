@@ -28,7 +28,7 @@
         .trend-back{
             width: 100%;
             img{
-                width: 170vw;
+                width: 190vw;
             }
             .background-radial{
                 height: 50vh;
@@ -139,10 +139,17 @@
 // LISTA DE EPISODIOS //
 @media (max-width:620px) {
     #banner{
-        background:  linear-gradient(to top, #191919 0%,#191919 85%, #19191900 100%), no-repeat url(../../assets/jujutsu-kaisen.jpg);
+        background:  linear-gradient(to top, #191919 0%,#191919 85%, #19191900 100%), url(../assets/jujutsu-kaisen.jpg);
         background-size: contain;
     }
     .main-episodes{
+        .description{
+            .description-top{
+                div{
+                    text-align: center;
+                }
+            }
+        }
         .list-episodes{
             .episodes{
                 ul{

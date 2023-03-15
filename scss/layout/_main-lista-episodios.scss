@@ -1,19 +1,20 @@
 #banner{
-    background-image: linear-gradient(to top, #191919 0%,#191919 70%, #19191900 100%), no-repeat url(../assets/jujutsu-kaisen.jpg);
+    background-image: linear-gradient(to top, #191919 0%,#191919 70%, #19191900 100%), url(../assets/jujutsu-kaisen.jpg);
     background-size: contain;
 }
 
 .main-episodes{
     .description{
         @include flex(space-between, end, wrap, row, 0);
-        height: 35vh;
+        height: 50vh;
         .description-top{
             @include flex(center, start, nowrap, column, 1em);
             margin-bottom: 1em;
             div{
                 h1{
-                    font-size: 52px;
-                }
+                    font-size: 80px;
+                    font-family: "Jujutsu";
+                    }
                 ul{
                     display: flex;
                     flex-direction: row;

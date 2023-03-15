@@ -7,7 +7,7 @@
             div{
                 @include flex(center, left, nowrap, column, 1em);
                 z-index: 1;
-                max-width: 35rem;
+                max-width: 34rem;
                 img{
                     max-width: 22vw;
                 }
@@ -15,10 +15,13 @@
                     font-size: 26px;
                 }
                 .name{
-                    font-size: 40px;
+                    font-size: 55px;
+                    font-family: "Kimetsu";
+                    -webkit-text-stroke: 0.1mm   white;
+                    color: black;
                 }
                 p{
-                    font-size: 17px;
+                    font-size: 15px;
                 }
             }
         }
