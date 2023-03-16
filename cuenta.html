@@ -10,8 +10,8 @@
     <meta property="og: title" content="Tendencias, animes en emision">
     <meta property="og: description" content="Portal de anime online, clásicos, tendencias, populares">
     <meta property="og: img" content="">
-    <meta property="og: url" content="https://malczewski94.github.io/proyecto-coderhouse/pages/reproduccion.html">
-    <title>Watch Anime - Reproductor</title>
+    <meta property="og: url" content="https://malczewski94.github.io/proyecto-coderhouse/pages/cuenta.html">
+    <title>Watch Anime - Cuenta</title>
     <link rel="shortcut icon" href="../assets/icons/stream.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -37,7 +37,7 @@
                 <li>
                     <a href="./cuenta.html">
                         <div>
-                            <img src="../assets/icons/account-2.png" alt="account">
+                            <img src="../assets/icons/account.png" alt="account">
                         </div>
                         <div>
                             <p>Cuenta</p>
@@ -72,8 +72,8 @@
         <section class="header">
             <div>
                 <form action="/bowser" method="get">
-                    <input  class="search" type="text" autocomplete="off" placeholder="Buscar">
-                    <button class="search-button">Buscar</button>
+                    <input type="text" autocomplete="off" placeholder="Buscar">
+                    <button>Buscar</button>
                 </form>
             </div>
             <div>
@@ -89,94 +89,58 @@
                 </ul>
             </div>        
         </section>
-        <section class="main-reproduction">
-            <ul class="nav-guide">
-                <li>
-                    <a href="../index.html">
-                        <img src="../assets/icons/home.png" alt="home">Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="./lista-episodios.html">
-                        <img src="../assets/icons/arrow-1.png" alt="arrow">Lista de episodios
-                    </a>
-                </li>
-                <li>
-                    <a href="./reproduccion.html">
-                        <img src="../assets/icons/arrow-1.png" alt="arrow">Jujutsu Kaisen - Episodio 1
-                    </a>
-                </li>
-            </ul>
-            <h1>Jujutsu Kaisen - Episodio 1</h1>
-            <div class="video-settings">
-                <div class="video">
-                    <iframe width="" height="" src="https://www.youtube.com/embed/6Tn55tBUdOE" title="JUJUTSU KAISEN | Episodio 1 COMPLETO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="video-bottom">
+        <section class="config">
+            <div class="title-config">
+                <h1>Configuración</h1>
+                <ul role="tablist">
+                    <li>Perfil</li>
+                    <li>Mi lista</li>
+                </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="subtitle-config">
+                <h2>Foto de perfil</h2>
+                <div class="contain-config">
                     <div>
-                        <ul class="select-episode">
-                            <li>
-                                <a href="./reproduccion.html">Anterior</a>
-                            </li>
-                            <li>
-                                <a href="./lista-episodios.html">
-                                    <img src="../assets/icons/list.png" alt="lista-episodios">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./reproduccion.html">Siguiente</a>            
-                            </li>
-                        </ul>
+                        <img class="account" src="../assets/icons/account.png" alt="profile-picture">
                     </div>
-                    <div class="share">
-                        <img src="../assets/icons/share.png" alt="share">
-                        <strong>Compartir</strong>
-                        <div>
-                            <a href="https://www.facebook.com/">
-                                <img src="../assets/icons/facebook.png" alt="facebook">
-                            </a>
-                            <a href="https://www.instagram.com/">
-                                <img src="../assets/icons/instagram.png" alt="instagram">
-                            </a>
-                            <a href="https://twitter.com/?lang=es">
-                                <img src="../assets/icons/twitter.png" alt="twitter">
-                            </a>
-                        </div>
-                    </div>
+                    <form action="#">
+                        <input type="submit" value="Agregar foto de perfil">
+                        <p>Debe ser un archivo JPEG, PNG o GIF de máximo 10 MB</p>
+                    </form>
                 </div>
             </div>
-            <div class="separator">
+            <div class="subtitle-config">
+                <h2>Banner del perfil</h2>
+                <div class="contain-config">
+                    <div>
+                        <img class="banner" src="../assets/jujutsu-kaisen.jpg" alt="banner">
+                    </div>
+                    <form action="#">
+                        <input type="submit" value="Actualizar">
+                        <p>Formato de archivo: JPEG, PNG, GIF (1200x480 recomendado, 10 MB máximo)</p>
+                    </form>
+                </div>
             </div>
-            <div class="comments">
-                <h2>Comentarios</h2>
-                <div class="my-comment">
-                    <div>
-                        <img src="../assets/icons/account.png" alt="profile-picture">
-                    </div>
-                    <div class="textbox">
-                        <div role="textbox" aria-multiline="true" contenteditable="" style="overflow: auto; overflow-wrap: break-word;"></div>
-                    </div>
-                </div>
-                <div class="separator-2"></div>
-                <div class="filter">
-                    <p>Mejor</p>
-                    <p>Más reciente</p>
-                    <p>Más antiguo</p>
-                </div>
-                <div class="posted-comments">
-                    <div>
-                        <img src="../assets/icons/account.png" alt="profile-picture">
-                    </div>
-                    <div>
-                        <a href="./cuenta.html">Nombre Usuario</a>
-                        <div class="time-post">
-                            <img src="../assets/icons/reloj-de-pared.png" alt="watch">
-                            <p>Hace un día</p>
-                        </div>
+            <div class="subtitle-config">
+                <h2>Configuración del perfil</h2>
+                <p>Cambiar los datos de identificación de tu cuenta</p>
+                <div class="contain-config">
+                    <form class="data" action="#">
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores exercitationem molestias fugiat animi ab, architecto itaque? Perferendis quisquam et esse nemo cum aut perspiciatis? Molestias quos quaerat deleniti culpa.</p>
+                            <p>Usuario</p>
+                            <input class="text-box-1" type="text" name="user">
                         </div>
-                    </div>
+                        <p>Puedes actualizar tu nombre de usuario.</p>
+                        <div>
+                            <p>Nombre público</p>
+                            <input class="text-box-2" type="text" name="public-name">
+                        </div>
+                        <p>Personaliza el uso de mayúsculas en tu nombre de usuario.</p>
+                        <div>
+                            <input type="submit" value="Guardar cambios">
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

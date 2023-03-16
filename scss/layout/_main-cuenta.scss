@@ -7,9 +7,28 @@
             @include flex(left, center, nowrap, row, 2em);
             margin-left: 1em;
             margin-bottom: 1em;
+            .li{
+                transition: all .5s ease;
+            }
+            .li.activo{
+                color: #00ffff;
+            }
         }
-        ul li:hover{
-            color: #00ffff;
+//        ul li:hover{
+//            color: #00ffff;
+//        }
+    }
+    .sub-contenedor{
+        min-height: 100vh;
+        position: relative;
+        .bloque{
+            position: absolute;
+            opacity: 0;
+            top: 2em;
+            transition: all .5s ease;
+        }
+        .bloque.activo{
+            opacity: 1;
         }
     }
     .subtitle-config{

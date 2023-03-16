@@ -48,6 +48,11 @@
                     }
                 }
             }
+            .share{
+                img{
+                    height: 26px;
+                }
+            }
         }
     }
     .comments{
@@ -59,6 +64,8 @@
             @include flex(center, start, nowrap, row, 5em);
             div{
                 img{
+                    width: 4rem;
+                    height: 4rem;
                     border-radius: 50%;
                     border: solid 3px #e5097f;
                 }
@@ -95,6 +102,8 @@
             div{
                 margin-bottom: 1em;
                 img{
+                    width: 4rem;
+                    height: 4rem;
                     border-radius:50%;
                     border: solid 3px #e5097f;
                 }

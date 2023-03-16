@@ -285,7 +285,7 @@ footer {
       .trend a .trend-front div .name {
         font-size: 55px;
         font-family: "Kimetsu";
-        -webkit-text-stroke: 0.1mm   white;
+        -webkit-text-stroke: 0.1px white;
         color: black; }
       .trend a .trend-front div p {
         font-size: 15px; }
@@ -346,9 +346,21 @@ footer {
   gap: 2em;
   margin-left: 1em;
   margin-bottom: 1em; }
+  .config .title-config ul .li {
+    transition: all .5s ease; }
+  .config .title-config ul .li.activo {
+    color: #00ffff; }
 
-.config .title-config ul li:hover {
-  color: #00ffff; }
+.config .sub-contenedor {
+  min-height: 100vh;
+  position: relative; }
+  .config .sub-contenedor .bloque {
+    position: absolute;
+    opacity: 0;
+    top: 2em;
+    transition: all .5s ease; }
+  .config .sub-contenedor .bloque.activo {
+    opacity: 1; }
 
 .config .subtitle-config h2 {
   margin-top: 0.5em; }
@@ -548,6 +560,8 @@ footer {
           font-weight: 650; }
           .main-reproduction .video-settings .video-bottom div ul li a img {
             height: 24px; }
+      .main-reproduction .video-settings .video-bottom .share img {
+        height: 26px; }
   .main-reproduction .comments {
     width: inherit; }
     .main-reproduction .comments h2 {
@@ -560,6 +574,8 @@ footer {
       flex-direction: row;
       gap: 5em; }
       .main-reproduction .comments .my-comment div img {
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         border: solid 3px #e5097f; }
       .main-reproduction .comments .my-comment .textbox {
@@ -592,6 +608,8 @@ footer {
       .main-reproduction .comments .posted-comments div {
         margin-bottom: 1em; }
         .main-reproduction .comments .posted-comments div img {
+          width: 4rem;
+          height: 4rem;
           border-radius: 50%;
           border: solid 3px #e5097f; }
         .main-reproduction .comments .posted-comments div div p {
