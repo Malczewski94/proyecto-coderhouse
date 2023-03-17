@@ -17,7 +17,8 @@
                 .name{
                     font-size: 55px;
                     font-family: "Kimetsu";
-                    -webkit-text-stroke: 0.1px white;
+                    //-webkit-text-stroke: 0.1px white;
+                    text-shadow: 0 0 3px white;
                     color: black;
                 }
                 p{
@@ -58,7 +59,7 @@
     }
     div{
         .emission{
-            @include flex(space-around, center, wrap, row, 2em);
+            @include flex(center, center, wrap, row, 2em);
             li{
                 margin-bottom: 1em;
                 a{

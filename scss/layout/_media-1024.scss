@@ -30,6 +30,22 @@
     }
 }
 
+// CUENTA //
+@media (max-width:1024px) {
+    .config{
+        .sub-contain{
+            .block{
+                .subtitle-config{
+                    .contain-config{
+                        width: 65vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 // LISTA DE EPISODIOS //
 @media (max-width:1024px) {
     #banner{

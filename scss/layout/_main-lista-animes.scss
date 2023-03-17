@@ -25,7 +25,7 @@
 
 .list-anime{
     ul{
-        @include flex(space-around, center, wrap, row, 2em);
+        @include flex(center, center, wrap, row, 2em);
         margin: 2em 0 2em 0;
         li{
             @include flex(center, left, nowrap, column,0.5em);
@@ -79,8 +79,8 @@
             a{
             max-width: 12rem;
             height: 2em;
-                text-align: center;
-                font-weight: bolder;
+            text-align: center;
+            font-weight: bolder;
             }
         }
     }

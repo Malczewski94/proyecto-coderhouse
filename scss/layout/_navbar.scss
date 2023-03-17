@@ -7,7 +7,9 @@ header{
 
 .nav{
     @include flex(center, center, nowrap, column, 2em);
-    margin-top: 2em;
+    top: 1.5em;
+    left: 1.5em;
+    position: fixed;
     li{
         a{
             div{
@@ -61,6 +63,9 @@ header{
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     #logo{
         display: none;

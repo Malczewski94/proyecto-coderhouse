@@ -69,36 +69,34 @@
 }
 
 // CUENTA // 
-@media (max-width:700px) {
+@media (max-width:620px) {
     .config{
-        .subtitle-config{
-            .contain-config{
-                gap:1em;
-                width: 100%;
-                .account{
-                    margin-left: 0.5em;
-                }
-                .banner{
-                    margin-left: 0.5em;
-                    max-width: 8rem;
-                }
-                form{
-                    input{
-                        width: 8rem;
-                    }
-                }
-                .data{
-                    text-align: center;
-                    div{
-                        .text-box-1{
-                            width: 50vw;
+        .sub-contain{
+            .block{
+                .subtitle-config{
+                    .contain-config{
+                        gap:1em;
+                        width: 85vw;
+                        .account{
+                            margin-left: 0.5em;
+                        }
+                        .banner{
+                            margin-left: 0.5em;
+                            max-width: 8rem;
+                        }
+                        form{
+                            input{
+                                width: 8rem;
+                            }
+                        }
+                        .data{
+                            text-align: center;
                         }
                     }
                 }
             }
         }
     }
-    
 }
 
 // LISTA DE ANIME //

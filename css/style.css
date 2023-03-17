@@ -112,7 +112,9 @@ header {
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 2em;
-  margin-top: 2em; }
+  top: 1.5em;
+  left: 1.5em;
+  position: fixed; }
   .nav li a div {
     padding: 0.3rem 0.4rem 0 0.4rem; }
     .nav li a div img {
@@ -152,7 +154,10 @@ header {
     padding: 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    position: relative;
+    top: 0;
+    left: 0; }
   #logo {
     display: none; } }
 
@@ -285,7 +290,7 @@ footer {
       .trend a .trend-front div .name {
         font-size: 55px;
         font-family: "Kimetsu";
-        -webkit-text-stroke: 0.1px white;
+        text-shadow: 0 0 3px white;
         color: black; }
       .trend a .trend-front div p {
         font-size: 15px; }
@@ -319,7 +324,7 @@ footer {
 
 .list-anime-index div .emission {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
@@ -334,95 +339,107 @@ footer {
     .list-anime-index div .emission li a span img:hover {
       transform: scale(1.02); }
 
-.config .title-config h1 {
-  margin: 0.5em 0 0.5em 0; }
-
-.config .title-config ul {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  gap: 2em;
-  margin-left: 1em;
-  margin-bottom: 1em; }
-  .config .title-config ul .li {
-    transition: all .5s ease; }
-  .config .title-config ul .li.activo {
-    color: #00ffff; }
-
-.config .sub-contenedor {
-  min-height: 100vh;
-  position: relative; }
-  .config .sub-contenedor .bloque {
-    position: absolute;
-    opacity: 0;
-    top: 2em;
-    transition: all .5s ease; }
-  .config .sub-contenedor .bloque.activo {
-    opacity: 1; }
-
-.config .subtitle-config h2 {
-  margin-top: 0.5em; }
-
-.config .subtitle-config .contain-config {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  gap: 2em;
-  width: 55vw;
-  margin: 1em 0 1em 0;
-  padding: 0.75em 0 0.75em 0;
-  border: solid 1px #e5097f;
-  border-radius: 1rem;
-  background: #393939; }
-  .config .subtitle-config .contain-config .account {
-    border-radius: 50%;
-    border: solid 2px white;
-    margin-left: 1em; }
-  .config .subtitle-config .contain-config .banner {
-    max-width: 11rem;
-    margin-left: 1em;
-    border-radius: 4px;
-    border: solid 1px white; }
-  .config .subtitle-config .contain-config form {
+.config {
+  max-height: 200vh; }
+  .config .title-config h1 {
+    margin: 0.5em 0 0.5em 0; }
+  .config .title-config .ul {
     display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 0.5em; }
-    .config .subtitle-config .contain-config form input {
-      width: 10rem;
-      height: 1.8rem;
-      background: #e5097f;
-      border: none;
-      border-radius: 4px;
-      color: white;
-      box-shadow: 2px 2px 5px #191919; }
-  .config .subtitle-config .contain-config .data {
-    display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 0.5em;
-    width: 100%; }
-    .config .subtitle-config .contain-config .data div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      flex-direction: row;
-      gap: 5em; }
-      .config .subtitle-config .contain-config .data div .text-box-1, .config .subtitle-config .contain-config .data div .text-box-2 {
-        width: 40vw;
-        background: #696969;
-        box-shadow: inset 2px 2px 5px #191919; }
-      .config .subtitle-config .contain-config .data div .text-box-2 {
-        margin-left: -4em; }
+    flex-direction: row;
+    gap: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em; }
+    .config .title-config .ul .li {
+      transition: all .5s ease;
+      cursor: pointer; }
+    .config .title-config .ul .li.active {
+      color: #00ffff; }
+  .config .sub-contain {
+    position: relative;
+    overflow: hidden; }
+    .config .sub-contain .block {
+      position: absolute;
+      opacity: 0;
+      top: 2em;
+      transition: all .5s ease; }
+      .config .sub-contain .block .subtitle-config {
+        padding-bottom: 2em;
+        margin-left: .5em; }
+        .config .sub-contain .block .subtitle-config h2 {
+          margin-top: 0.5em; }
+        .config .sub-contain .block .subtitle-config .contain-config {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          gap: 2em;
+          width: 55vw;
+          margin: 1em 0 1em 0;
+          padding: 0.75em 0 0.75em 0;
+          border: solid 1px #e5097f;
+          border-radius: 1rem;
+          background: #393939; }
+          .config .sub-contain .block .subtitle-config .contain-config .account {
+            border-radius: 50%;
+            border: solid 2px white;
+            margin-left: 1em; }
+          .config .sub-contain .block .subtitle-config .contain-config .banner {
+            max-width: 11rem;
+            margin-left: 1em;
+            border-radius: 4px;
+            border: solid 1px white; }
+          .config .sub-contain .block .subtitle-config .contain-config form {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 0.5em; }
+            .config .sub-contain .block .subtitle-config .contain-config form input {
+              width: 10rem;
+              height: 1.8rem;
+              background: #e5097f;
+              border: none;
+              border-radius: 4px;
+              color: white;
+              box-shadow: 2px 2px 5px #191919; }
+          .config .sub-contain .block .subtitle-config .contain-config .data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%; }
+            .config .sub-contain .block .subtitle-config .contain-config .data div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: nowrap;
+              flex-direction: row;
+              gap: 5em; }
+              .config .sub-contain .block .subtitle-config .contain-config .data div .text-box-1, .config .sub-contain .block .subtitle-config .contain-config .data div .text-box-2 {
+                width: 40vw;
+                background: #696969;
+                box-shadow: inset 2px 2px 5px #191919; }
+              .config .sub-contain .block .subtitle-config .contain-config .data div .text-box-2 {
+                margin-left: -4em; }
+      .config .sub-contain .block .list-anime {
+        padding-bottom: 2em; }
+        .config .sub-contain .block .list-anime .markers {
+          margin-top: 1em;
+          display: flex;
+          align-items: center;
+          gap: 1em; }
+          .config .sub-contain .block .list-anime .markers img {
+            height: 32px; }
+    .config .sub-contain .block.active {
+      position: relative;
+      opacity: 1; }
 
 .multiselect h1 {
   margin: 1em 0 1em 0.5em; }
@@ -449,7 +466,7 @@ footer {
 
 .list-anime ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
@@ -651,7 +668,9 @@ footer {
     margin-bottom: 1em; }
     .main-episodes .description .description-top div h1 {
       font-size: 80px;
-      font-family: "Jujutsu"; }
+      font-family: "Jujutsu";
+      -webkit-text-stroke: 0.1px #b7ae7d;
+      color: #191919; }
     .main-episodes .description .description-top div ul {
       display: flex;
       flex-direction: row;
@@ -673,7 +692,8 @@ footer {
     gap: 1.5em; }
     .main-episodes .description .follow ul li {
       text-align: center;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      cursor: pointer; }
       .main-episodes .description .follow ul li img {
         height: 24px; }
 
@@ -753,6 +773,10 @@ footer {
     height: 28rem; } }
 
 @media (max-width: 1024px) {
+  .config .sub-contain .block .subtitle-config .contain-config {
+    width: 65vw; } }
+
+@media (max-width: 1024px) {
   #banner {
     background: linear-gradient(to top, #191919 0%, #191919 80%, #19191900 100%), url(../assets/jujutsu-kaisen.jpg);
     background-size: contain; } }
@@ -777,10 +801,6 @@ footer {
   .trend .trend-back .background-radial {
     height: 23rem;
     width: 80vw; } }
-
-@media (max-width: 768px) {
-  .config .subtitle-config .contain-config .data div .text-box-1, .config .subtitle-config .contain-config .data div .text-box-2 {
-    width: 35vw; } }
 
 @media (max-width: 830px) {
   .main-episodes .description {
@@ -840,21 +860,19 @@ footer {
           height: 20vh;
           border-radius: 1.2rem 0 0 1.2rem; } }
 
-@media (max-width: 700px) {
-  .config .subtitle-config .contain-config {
+@media (max-width: 620px) {
+  .config .sub-contain .block .subtitle-config .contain-config {
     gap: 1em;
-    width: 100%; }
-    .config .subtitle-config .contain-config .account {
+    width: 85vw; }
+    .config .sub-contain .block .subtitle-config .contain-config .account {
       margin-left: 0.5em; }
-    .config .subtitle-config .contain-config .banner {
+    .config .sub-contain .block .subtitle-config .contain-config .banner {
       margin-left: 0.5em;
       max-width: 8rem; }
-    .config .subtitle-config .contain-config form input {
+    .config .sub-contain .block .subtitle-config .contain-config form input {
       width: 8rem; }
-    .config .subtitle-config .contain-config .data {
-      text-align: center; }
-      .config .subtitle-config .contain-config .data div .text-box-1, .config .subtitle-config .contain-config .data div .text-box-2 {
-        width: 50vw; } }
+    .config .sub-contain .block .subtitle-config .contain-config .data {
+      text-align: center; } }
 
 @media (max-width: 690px) {
   .list-anime ul li div {
