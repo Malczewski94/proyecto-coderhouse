@@ -38,10 +38,21 @@
                 <li>
                     <a href="./cuenta.html">
                         <div>
-                            <img src="../assets/icons/account.png" alt="account">
+                            <img class="img-account" src="../assets/icons/account.png" alt="account">
                         </div>
                         <div>
                             <p>Cuenta</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class='doc' href="./cuenta.html#library">
+                        <div>
+                            <img class="library" src="../assets/icons/library.png" alt="my-list">
+                        </div>
+                        <div>
+                            <p id="desktop">Mi libreria</p>
+                            <p id="mobile">Libreria</p>
                         </div>
                     </a>
                 </li>
@@ -51,18 +62,8 @@
                             <img src="../assets/icons/list-2.png" alt="anime-list">
                         </div>
                         <div>
-                            <p>Lista de Anime</p>
+                            <p id="desktop">Lista de Anime</p>
                             <p id="mobile">Lista</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>
-                            <img src="../assets/icons/library-2.png" alt="my-list">
-                        </div>
-                        <div>
-                            <p>Mi libreria</p>
                         </div>
                     </a>
                 </li>
@@ -121,7 +122,7 @@
                             </div>
                             <form action="#">
                                 <input type="submit" value="Actualizar">
-                                <p<<>Formato de archivo: JPEG, PNG, GIF (1200x480 recomendado, 10 MB máximo)</p>
+                                <p>Formato de archivo: JPEG, PNG, GIF (1200x480 recomendado, 10 MB máximo)</p>
                             </form>
                         </div>
                     </div>
@@ -372,5 +373,7 @@
             </a>
         </div>
     </footer>
+    
+    <script defer src="../js/defaultLibreryTab.js"></script>
 </body>
 </html>

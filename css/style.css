@@ -158,8 +158,29 @@ header {
     position: relative;
     top: 0;
     left: 0; }
+    .nav li a {
+      text-align: center; }
+      .nav li a div {
+        padding: 0;
+        width: 20vw; }
+        .nav li a div p {
+          text-align: center;
+          padding: 0;
+          display: block;
+          width: 18.5vw;
+          margin-left: 0.3em; }
+    .nav li:hover {
+      background: none; }
+    .nav li:hover a div p {
+      display: block;
+      position: relative;
+      bottom: 0; }
   #logo {
-    display: none; } }
+    display: none; }
+  #desktop {
+    display: none; }
+  #mobile {
+    display: block; } }
 
 .header {
   display: flex;
@@ -340,7 +361,7 @@ footer {
       transform: scale(1.02); }
 
 .config {
-  max-height: 200vh; }
+  max-height: 100%; }
   .config .title-config h1 {
     margin: 0.5em 0 0.5em 0; }
   .config .title-config .ul {
@@ -433,7 +454,6 @@ footer {
         .config .sub-contain .block .list-anime .markers {
           margin-top: 1em;
           display: flex;
-          align-items: center;
           gap: 1em; }
           .config .sub-contain .block .list-anime .markers img {
             height: 32px; }
@@ -453,20 +473,49 @@ footer {
   gap: 2em;
   margin-bottom: 1em; }
   .multiselect ul li {
+    position: relative;
     display: flex; }
-    .multiselect ul li img {
+    .multiselect ul li .button {
+      background-color: #191919;
       width: 14px;
       height: 14px;
-      margin-top: 3px; }
-  .multiselect ul div {
+      border: none;
+      margin-left: 0.5em; }
+      .multiselect ul li .button .svg {
+        color: #00c6c7;
+        cursor: pointer; }
+    .multiselect ul li .filter {
+      position: absolute;
+      display: none;
+      z-index: 1;
+      top: 2em;
+      left: 0; }
+      .multiselect ul li .filter ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0;
+        width: 30vw;
+        border-radius: 8px;
+        background: #494949; }
+        .multiselect ul li .filter ul li {
+          padding: 1em;
+          width: 10vw;
+          gap: 0.5em; }
+    .multiselect ul li .filter.active {
+      display: block; }
+  .multiselect ul .filter-img {
     display: flex; }
-    .multiselect ul div img {
+    .multiselect ul .filter-img img {
       width: 18px;
-      height: 18px; }
+      height: 18px;
+      cursor: pointer; }
 
 .list-anime ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
@@ -791,6 +840,12 @@ footer {
     width: 560px;
     height: 297px; } }
 
+@media (max-width: 1024px) {
+  .multiselect ul li .filter ul {
+    width: 20vw; }
+    .multiselect ul li .filter ul li {
+      width: 20vw; } }
+
 @media (max-width: 768px) {
   .trend a .trend-front {
     justify-content: start;
@@ -818,6 +873,14 @@ footer {
   .main-reproduction .comments .posted-comments {
     justify-content: space-evenly;
     gap: 0; } }
+
+@media (max-width: 700px) {
+  .multiselect ul li .filter ul {
+    width: 30vw; } }
+
+@media (max-width: 500px) {
+  .multiselect ul li .filter ul {
+    width: 35vw; } }
 
 @media (max-width: 600px) {
   #padding {
@@ -875,11 +938,13 @@ footer {
       text-align: center; } }
 
 @media (max-width: 690px) {
-  .list-anime ul li div {
-    width: 40vw;
-    height: 40vh; } }
+  .list-anime ul {
+    justify-content: center; }
+    .list-anime ul li div {
+      width: 40vw;
+      height: 40vh; } }
 
-@media (max-width: 450px) {
+@media (max-width: 435px) {
   .list-anime ul li {
     align-items: center; }
     .list-anime ul li div {
@@ -888,7 +953,15 @@ footer {
       .list-anime ul li div div strong {
         margin: 0 0.5em 1em 0.5em; }
       .list-anime ul li div div p {
-        margin: 1em 0.5em 1em 0.5em; } }
+        margin: 1em 0.5em 1em 0.5em; }
+  .multiselect ul {
+    gap: 3em; }
+    .multiselect ul li .filter {
+      left: -2em; }
+      .multiselect ul li .filter ul {
+        width: 45vw; }
+        .multiselect ul li .filter ul li {
+          width: 45vw; } }
 
 @media (max-width: 620px) {
   #banner {

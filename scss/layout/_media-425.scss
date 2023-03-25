@@ -103,6 +103,7 @@
 @media (max-width:690px) {
     .list-anime{
         ul{
+            justify-content: center;
             li{
                 div{
                     width: 40vw;
@@ -112,7 +113,7 @@
         }
     }
 }
-@media (max-width:450px) {
+@media (max-width:435px) {
     .list-anime{
         ul{
             li{
@@ -126,6 +127,22 @@
                         }
                         p{
                             margin: 1em 0.5em 1em 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .multiselect{
+        ul{
+            gap: 3em;
+            li{
+                .filter{
+                    left: -2em;
+                    ul{
+                        width: 45vw;
+                        li{
+                            width: 45vw;
                         }
                     }
                 }

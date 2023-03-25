@@ -80,3 +80,21 @@
         }
     }
 }
+
+// LISTA DE ANIME //
+@media (max-width:1024px) {
+    .multiselect{
+        ul{
+            li{
+                .filter{
+                    ul{
+                        width: 20vw;
+                        li{
+                            width: 20vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

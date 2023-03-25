@@ -14,6 +14,7 @@
     <title>Watch Anime - Biblioteca</title>
     <link rel="shortcut icon" href="../assets/icons/stream.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/filter.js"></script>
 </head>
 <body class="hero">
     <header>
@@ -44,24 +45,25 @@
                         </div>
                     </a>
                 </li>
+                <li>    
+                    <a href="./cuenta.html#library">
+                        <div>
+                            <img src="../assets/icons/library-2.png" alt="my-list">
+                        </div>
+                        <div>
+                            <p id="desktop">Mi libreria</p>
+                            <p id="mobile">Libreria</p>
+                        </div>
+                    </a>
+                </li>
                 <li>
                     <a href="./lista-anime.html">
                         <div>
                             <img src="../assets/icons/list.png" alt="anime-list">
                         </div>
                         <div>
-                            <p>Lista de Anime</p>
+                            <p id="desktop">Lista de Anime</p>
                             <p id="mobile">Lista</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>
-                            <img src="../assets/icons/library-2.png" alt="my-list">
-                        </div>
-                        <div>
-                            <p>Mi libreria</p>
                         </div>
                     </a>
                 </li>
@@ -95,21 +97,82 @@
                 <ul>
                     <li>
                         <p>Genero</p>
-                        <img src="../assets/icons/arrow-down.png" alt="arrow">
+                        <button class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </button>
+                        <div class="filter">
+                            <ul>
+                                <li><input type="checkbox">Acción</li>
+                                <li><input type="checkbox">Aventuras</li>
+                                <li><input type="checkbox">Carreras</li>
+                                <li><input type="checkbox">Ciencia Ficcón</li>
+                                <li><input type="checkbox">Demonios</li>
+                                <li><input type="checkbox">Ecchi</li>
+                                <li><input type="checkbox">Escolar</li>
+                                <li><input type="checkbox">Fantasía</li>
+                                <li><input type="checkbox">Harem</li>
+                                <li><input type="checkbox">Magia</li>
+                                <li><input type="checkbox">Mecha</li>
+                                <li><input type="checkbox">Misterio</li>
+                                <li><input type="checkbox">Romance</li>
+                                <li><input type="checkbox">Seinen</li>
+                                <li><input type="checkbox">Shoujo</li>
+                                <li><input type="checkbox">Shonen</li>
+                                <li><input type="checkbox">Sobrenatural</li>
+                                <li><input type="checkbox">Terror</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <p>Tipos</p>
-                        <img src="../assets/icons/arrow-down.png" alt="arrow">
+                        <button class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </button>
+                        <div class="filter">
+                            <ul>
+                                <li><input type="checkbox">TV</li>
+                                <li><input type="checkbox">Película</li>
+                                <li><input type="checkbox">Especial</li>
+                                <li><input type="checkbox">OVA</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <p>Estado</p>
-                        <img src="../assets/icons/arrow-down.png" alt="arrow">
+                        <button class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </button>
+                        <div class="filter">
+                            <ul>
+                                <li><input type="checkbox">En emisión</li>
+                                <li><input type="checkbox">Finalizado</li>
+                                <li><input type="checkbox">Próximamente</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <p>Orden</p>
-                        <img src="../assets/icons/arrow-down.png" alt="arrow">
+                        <button class="button">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                            </svg>
+                        </button>
+                        <div class="filter">
+                            <ul>
+                                <li><input type="checkbox">Recientemente Actualizados</li>
+                                <li><input type="checkbox">Recientemente Agregados</li>
+                                <li><input type="checkbox">Nombre A-Z</li>
+                                <li><input type="checkbox">Calificación</li>
+                            </ul>
+                        </div>
                     </li>
-                    <div class="filter">
+                    <div class="filter-img">
                         <p>Filtrar</p>
                         <img src="../assets/icons/filter.png" alt="filter">
                     </div>
