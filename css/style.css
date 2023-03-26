@@ -942,7 +942,13 @@ footer {
     justify-content: center; }
     .list-anime ul li div {
       width: 40vw;
-      height: 40vh; } }
+      height: 40vh; }
+  .multiselect ul li .filter ul {
+    width: 30vw; }
+    .multiselect ul li .filter ul li input {
+      display: none; }
+    .multiselect ul li .filter ul li input:checked + label {
+      color: #00ffff; } }
 
 @media (max-width: 435px) {
   .list-anime ul li {
@@ -956,12 +962,8 @@ footer {
         margin: 1em 0.5em 1em 0.5em; }
   .multiselect ul {
     gap: 3em; }
-    .multiselect ul li .filter {
-      left: -2em; }
-      .multiselect ul li .filter ul {
-        width: 45vw; }
-        .multiselect ul li .filter ul li {
-          width: 45vw; } }
+    .multiselect ul li .filter ul {
+      width: 35vw; } }
 
 @media (max-width: 620px) {
   #banner {
